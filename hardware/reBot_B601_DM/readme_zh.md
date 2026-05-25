@@ -152,7 +152,15 @@
 | <img src="./Purchased_Parts/XT30_2+2.png" width="80">    | XT30 2+2 350mm  | 1 | 25元/根| [一侧弯头一侧直头](https://item.taobao.com/item.htm?spm=tbpc.boughtlist.suborder_itemtitle.1.11ef2e8dGXDrsZ&id=45608377884&mi_id=0000fi4TRgR5Rpbt443OEA-hXzsZjWBADLtHC7g-Hypk2_c) |
 |<img src="./Purchased_Parts/XT30_2+2.png" width="80">   | XT30 2+2 200mm  | 3 | 22元/根 | [两端弯头](https://item.taobao.com/item.htm?spm=tbpc.boughtlist.suborder_itemtitle.1.11ef2e8dGXDrsZ&id=45608377884&mi_id=0000fi4TRgR5Rpbt443OEA-hXzsZjWBADLtHC7g-Hypk2_c) |
 | 需定制 | XT30 2+2 200mm  | 1 | 15元/根 | [两端直头](https://item.taobao.com/item.htm?spm=tbpc.boughtlist.suborder_itemtitle.1.11ef2e8dGXDrsZ&id=45608377884&mi_id=0000fi4TRgR5Rpbt443OEA-hXzsZjWBADLtHC7g-Hypk2_c) |
+
+### 关于固定
+| 名称 | 规格型号 | 数量 | 参考价格 | 备注 |
+|------|----------|------|----------|------|
 | 木工夹 | 6寸G夹 | 2 | 23.8元/个 | [淘宝](https://detail.tmall.com/item.htm?abbucket=16&id=586725303306&mi_id=00004yT93hDa9u4UdEwb8EDkia6N9T53oyrA4Q1RxXqFPPM&ns=1&priceTId=214781ea17747691228482392e12c1&skuId=3982108632344&spm=a21n57.1.hoverItem.17&utparam=%7B%22aplus_abtest%22%3A%22ad4370173bfc94cfe771df00b37e06f9%22%7D&xxc=taobaoSearch) |
+
+### 关于电源
+| 名称 | 规格型号 | 数量 | 参考价格 | 备注 |
+|------|----------|------|----------|------|
 | 电源 | 24V 14.6A | 1 | 105元 | [京东](https://item.jd.com/100277428188.html?extension_id=eyJhZCI6IjQ2NyIsImNoIjoiMiIsInNrdSI6IjEwMDIwODczODU0NSIsInRzIjoiMTc3NjMyMjcyOSIsInVuaXFpZCI6IntcImNsaWNrX2lkXCI6XCJkOGVmZmU0OC00ZTM1LTRjMDMtOWRmYy00MmY3NjE2MGQ2OTBcIixcIm1hdGVyaWFsX2lkXCI6XCI2NjU2Njc4ODQyM1wiLFwicG9zX2lkXCI6XCI0NjdcIixcInNpZFwiOlwiNzYzODU3YzEtNTg0ZC00OGM5LTk5NWEtYmY2ODgwNjkyN2Y4XCJ9In0%3D&jd_pop=d8effe48-4e35-4c03-9dfc-42f76160d690&abt=0&pcdk=mWwFV8NR2qHN9JGSEqZLDL8s3MRfkqvZ02cHMrV_6r8W2YXbuf-U_quV1c6K8kqd.rQ4a.tlbT#switch-sku) |
 | 电源 | 3插头 | 1 | 10元 | [淘宝](https://item.taobao.com/item.htm?spm=tbpc.boughtlist.suborder_itemtitle.1.1f592e8det3eBI&id=960503559387&mi_id=0000vHybX6A9mr06tmf2CYQW5G1BSCqA0KDfeQvBaxw7vfo) |
 | 电源 | XT30 16号线或者最粗14号线 | 1 | 32元 | [淘宝](https://item.taobao.com/item.htm?spm=tbpc.boughtlist.suborder_itemtitle.1.1f592e8det3eBI&id=911228476782&mi_id=0000p6sRA6SlQnZLaxoGPTHhFLbkhxB4jXkRtaDFXP5_Ofs) |

@@ -81,6 +81,7 @@
 
   中国：[淘宝矽递科技旗舰店](https://detail.tmall.com/item.htm?app=chrome&bxsign=scdlw5VjXYQhfgOyva6IEit8asOyaYSFE5I3VXYy3VPlmlREIPF350GWGqrQeFq6zMR0LYTFVDN1CYDrBsUaYz-4JxcTqiZF-HQ6NUldhIWqF4BZVDgneY0XNmbgokb1mXQ&cpp=1&id=1042412233386&price=8295&shareUniqueId=35714007536&share_crt_v=1&shareurl=true&short_name=h.iLxfDpYMNSysFIa&sourceType=item%2Citem&sp_tk=UGU1SzU2ZmJVdE8%3D&spm=a2159r.13376460.0.0&suid=f2c61ac8-e0ca-45d0-b100-75210b69b5b9&tbSocialPopKey=shareItem&tk=Pe5K56fbUtO&un=1a387738ed21d73a0f8768acc41474bb&un_site=0&ut_sk=1.aduVZSGbgvEDAPW0%2BMUyPBgR_21646297_1776313782940.Copy.1&wxsign=tbwGGBQEcYglkjQ8Bb9ce0nY3n0Lt2A0LqWv5fIH-2gpBWlQr1YAclOKyIimOONlUMdMNexbYhHL1BfCn7tnsbQlmgAwPGYNzFYFGNmitXbVMMtxoW1WB68Oux3DSBGem9OWTXZB4ARF_FuruhSrejI1g)
   
+Seeedstudio套件出货默认不带电源适配器和C型木工夹是考虑大家可能会用电池供电及DIY底座进行固定，当然你可以额外单独购买电源或者参考我们的[BOM最下面的明纬电源方案](./hardware/reBot_B601_DM/readme_zh.md/#关于电源)
 
 ## 🗺️ 开源路线图 (Roadmap & Status)
 

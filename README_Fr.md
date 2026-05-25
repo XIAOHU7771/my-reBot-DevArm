@@ -75,7 +75,9 @@
   - **Kit Complet** : Comprend l'ensemble complet du corps du bras robotique et du préhenseur.
   - **Bras Robotique Pré-assemblé** : Bras robotique fini entièrement assemblé.
 
-- Vous pouvez également acheter le [Leader Arm](https://www.seeedstudio.com/Star-Arm-102-p-6765.html)
+- - Le kit Seeedstudio ne comprend pas d'adaptateur d'alimentation ni de serre-joints en C dans ses accessoires standard. Ce choix tient compte du fait que les utilisateurs peuvent alimenter l'appareil avec une batterie ou le fixer sur une base personnalisée DIY. Vous pouvez acheter séparément une [alimentation](https://www.seeedstudio.com/AC-DC-Power-Adapter-IEC-60320-C14-XT30-Female-24V-4-5A-1200mm-L190-W92-5-H36mm-p-6764.html) et un [câble d'alimentation](https://www.seeedstudio.com/reServer-AC-US-p-5052.html), ou vous référer à la solution d'alimentation Mean Well indiquée en bas de notre [nomenclature (BOM)](./hardware/reBot_B601_DM/readme_fr.md/#about-power-supply).
+
+- Vous pouvez également acheter le [bras Leader](https://www.seeedstudio.com/Star-Arm-102-p-6765.html?qid=P2U7IG_yskyak5m_1776415593315) et [l’alimentation 12V 10A](https://www.seeedstudio.com/FY1209900-12V-10A-Power-Adapter-12V-10A-p-6496.html). Vous pouvez aussi utiliser l’adaptateur d’alimentation 12 V CC du SO‑ARM101 pour alimenter le Leader.
 
 ## 🗺️ Feuille de route & état
 

@@ -78,7 +78,9 @@
   - **Kit completo**: brazo robótico + pinza.
   - **Brazo ensamblado**: brazo robótico preensamblado.
 
-- También puedes comprar el [Leader Arm](https://www.seeedstudio.com/Star-Arm-102-p-6765.html)
+- El kit de Seeedstudio no incluye adaptador de corriente ni abrazaderas en C entre sus accesorios estándar. Esta configuración contempla que los usuarios pueden alimentar el dispositivo con baterías o montarlo sobre una base personalizada hecha por uno mismo. Puede adquirir por separado una [fuente de alimentación](https://www.seeedstudio.com/AC-DC-Power-Adapter-IEC-60320-C14-XT30-Female-24V-4-5A-1200mm-L190-W92-5-H36mm-p-6764.html) y un [cable de corriente](https://www.seeedstudio.com/reServer-AC-US-p-5052.html), o consultar la solución de fuente Mean Well que aparece al final de nuestra [lista de materiales (BOM)](./hardware/reBot_B601_DM/readme_es.md#/about-power-supply).
+
+- También puede comprar el [brazo Leader](https://www.seeedstudio.com/Star-Arm-102-p-6765.html?qid=P2U7IG_yskyak5m_1776415593315) y la [fuente de alimentación 12V 10A](https://www.seeedstudio.com/FY1209900-12V-10A-Power-Adapter-12V-10A-p-6496.html). Asimismo, puede usar el adaptador de corriente de 12 V CC del SO‑ARM101 para alimentar el Leader.
 
 ## 🗺️ Hoja de ruta y estado
 

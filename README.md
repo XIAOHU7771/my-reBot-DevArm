@@ -82,7 +82,11 @@
   - **Full Kit**: Includes the complete set of the robotic arm body and gripper.
   - **Pre‑assembled Robotic Arm**: Fully assembled finished robotic arm.
 
-- You can also purchase the [Leader Arm](https://www.seeedstudio.com/Star-Arm-102-p-6765.html?qid=P2U7IG_yskyak5m_1776415593315)
+- The Seeedstudio kit does not include a power adapter and C-clamps as standard accessories. This arrangement takes into account that users may power the unit via batteries or mount it with a custom DIY base. You may purchase a [power supply separately](https://www.seeedstudio.com/AC-DC-Power-Adapter-IEC-60320-C14-XT30-Female-24V-4-5A-1200mm-L190-W92-5-H36mm-p-6764.html) and [Power Cord](https://www.seeedstudio.com/reServer-AC-US-p-5052.html), or refer to the Mean Well power solution shown at the bottom of our [BOM](./hardware/reBot_B601_DM/readme.md/#about-power-supply).
+
+- You can also purchase the [Leader Arm](https://www.seeedstudio.com/Star-Arm-102-p-6765.html?qid=P2U7IG_yskyak5m_1776415593315) and [12V 10A Power Supply](https://www.seeedstudio.com/FY1209900-12V-10A-Power-Adapter-12V-10A-p-6496.html) You may also use the 12VDC power adapter of SO-ARM101 to supply power to the Leader.
+
+
 
 ## 🗺️ Roadmap & Status
 

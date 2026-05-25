@@ -76,7 +76,11 @@
   - **フルキット**：アーム本体とグリッパーをセットにしたフルセット
   - **組立済みアーム**：完成品として組み立てられたロボットアーム
 
-- [Leader Arm](https://www.seeedstudio.com/Star-Arm-102-p-6765.html) もご購入いただけます
+- Seeedstudioキットには標準付属品として電源アダプターおよびC型クランプは含まれておりません。これは、ユーザーがバッテリーで給電したり、自作の土台に取り付けたりするケースを考慮した仕様となっております。別途[電源装置](https://www.seeedstudio.com/AC-DC-Power-Adapter-IEC-60320-C14-XT30-Female-24V-4-5A-1200mm-L190-W92-5-H36mm-p-6764.html)と[電源ケーブル](https://www.seeedstudio.com/reServer-AC-US-p-5052.html)を購入するか、部品表（BOM）の最下部に記載された明緯（Mean Well）製電源ソリューションをご参照ください。参照先：[BOM](./hardware/reBot_B601_DM/readme_jp.md/#about-power-supply)
+
+
+- [リーダーアーム](https://www.seeedstudio.com/Star-Arm-102-p-6765.html?qid=P2U7IG_yskyak5m_1776415593315)と[12V 10A 電源アダプター](https://www.seeedstudio.com/FY1209900-12V-10A-Power-Adapter-12V-10A-p-6496.html)を購入することもできます。また、SO‑ARM101の12V直流電源アダプターを使用してリーダーに給電することも可能です。
+
 
 ## 🗺️ ロードマップ & ステータス
 
