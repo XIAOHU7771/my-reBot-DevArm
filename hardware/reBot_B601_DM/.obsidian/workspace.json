@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "ca70d2c4fba40a81",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e48603c979bbc52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d8d4fbb39473f28",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "readme_zh.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "readme_zh"
+            }
+          }
+        ]
+      },
+      {
+        "id": "4a8c29fb46886daf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e933aef87309809",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "readme_zh.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "readme_zh 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0255b547ad0b9b15",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae5be18aa4692be1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72177b14ca077a18",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "238b043161396425",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "784732adc57a7bd9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "acd4112a9289a1a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "854afbc0f0da81a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3946e21cd786146f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "readme_zh.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "readme_zh 的反向链接列表"
+            }
+          },
+          {
+            "id": "60f1d142d27e2ffb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "readme_zh.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "readme_zh 的出链列表"
+            }
+          },
+          {
+            "id": "5ab8fd53a7519cfe",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "fe027c8ac78a0a7a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "3e695dd1c7c858a2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "readme_zh.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "readme_zh 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "9d8d4fbb39473f28",
+  "lastOpenFiles": [
+    "readme_zh.md",
+    "Assembly_Steps/powerstep_images/2-3(2).jpg",
+    "Assembly_Steps/powerstep_images/3.jpg",
+    "Assembly_Steps/powerstep_images/2-3(1).jpg",
+    "Assembly_Steps/powerstep_images/2-2.jpg",
+    "Assembly_Steps/powerstep_images/2-1.jpg",
+    "Assembly_Steps/powerstep_images/1-8.jpg",
+    "Assembly_Steps/powerstep_images/1-7(2).jpg",
+    "Assembly_Steps/powerstep_images/1-7(1).jpg",
+    "Assembly_Steps/powerstep_images/1-6(2).jpg",
+    "Assembly_Steps/powerstep_images/1-6(1).jpg",
+    "Assembly_Steps/powerstep_images"
+  ]
+}
