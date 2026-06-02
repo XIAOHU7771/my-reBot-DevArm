@@ -111,7 +111,9 @@ We are committed to continuously maintaining and adapting to mainstream robot de
 #### Contributions from Developers 
 | Supported Ecosystem | Authors | Description / Estimated Release Date | Related Documentation or Repository |
 | :--- | :---: | :--- | :--- | 
-|  | | |
+| **ROS2 Passive Diagnostics Monitor (`rebotarm_monitor_ros2`)** | [@danieldoradotalaveron-rb](https://github.com/danieldoradotalaveron-rb) | Passive `/diagnostics` overlay (driver topics + host metrics) for `rqt_robot_monitor`; serial/CAN-aware aggregator. | [rebotarm_monitor_ros2](https://github.com/danieldoradotalaveron-rb/rebotarm_monitor_ros2) |
+| **ROS2 Driver — Safe park & shutdown** | [@danieldoradotalaveron-rb](https://github.com/danieldoradotalaveron-rb) | Capture rest pose on connect; slow return on shutdown or `/rebotarm/park` instead of dropping from q=0. | [reBotArmController_ROS2](https://github.com/danieldoradotalaveron-rb/reBotArmController_ROS2) |
+| **ROS2 Driver — Gravity compensation (smooth stop)** | [@danieldoradotalaveron-rb](https://github.com/danieldoradotalaveron-rb) | MIT ramp-out when leaving gravity comp to avoid clack before pos_vel handoff. | [reBotArmController_ROS2](https://github.com/danieldoradotalaveron-rb/reBotArmController_ROS2) |
 
 ### reBot Arm B601 RS
 
