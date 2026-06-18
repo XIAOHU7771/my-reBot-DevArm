@@ -2,7 +2,7 @@
 # 🦾 reBot-DevArm: Open Source Robotic Arm for All Developers
 
 <p align="center">
-  <img src="./media/v1.1.png" alt="reBot-DevArm Banner">
+  <img src="./media/RS5_56.png" alt="reBot-DevArm Banner">
 </p>
 
 <p align="center">
@@ -86,6 +86,13 @@
 
 - You can also purchase the [Leader Arm](https://www.seeedstudio.com/Star-Arm-102-p-6765.html?qid=P2U7IG_yskyak5m_1776415593315) and [12V 10A Power Supply](https://www.seeedstudio.com/FY1209900-12V-10A-Power-Adapter-12V-10A-p-6496.html) You may also use the 12VDC power adapter of SO-ARM101 to supply power to the Leader.
 
+-------------------
+- For reBot Arm RS Version, We offer five kit options  at  [Seeedstudio.com](https://www.seeedstudio.com/reBot-Arm-B601-RS-Assembled-Kit-with-Gripper-p-6865.html) :
+  - **Full Kit**: Includes the unassembled complete set of the robotic arm body and gripper.
+  - **Pre‑assembled Robotic Arm**: Fully assembled finished robotic arm.
+
+- We highly recommend using the [Meanwell 48V 12.5A](https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NzgzODk2NzUxNTQ0NzEyOjE3ODE2MTA2NTU6c3BfYXRmOjIwMDExNjA5NjQwMTc5ODo6MDo6&url=%2FLRS-350-48-Price-Switching-Supply-MeanWell%2Fdp%2FB0BP6S5DYR%2Fref%3Dsr_1_1_sspa%3Fcrid%3D27VPQOWNPN9UG%26dib%3DeyJ2IjoiMSJ9.qK84sGJa4-74kbCEX11MOFBju8sSQUdFsbHw6PNvmaEHnhzjX2T7dyhRNJY01mXxpWk8lccGOwnezxmqLKUjqglX_FI26mrxlvZf0KNiLdJ8QnhKsber4KDoyyLHNxWGV451uHCzZbCDXxM0iYXVnubuVourRaRURlyMorRavuLd2a32kABx-BKqyF5Dfr7dV453ecE6QULFqG-UVLBaBRijbxQGTJ2YiNyXAqn3bkM.Bt5mAPOJNAWGnXCC2mwvjdDdccZd1_0-WRXZpP4mR4M%26dib_tag%3Dse%26keywords%3DLRS-350-48%26qid%3D1781610655%26sprefix%3Dlrs-350-%252Caps%252C331%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1) power supply for the RS model. If you need stronger power to unlock its full performance, you may opt for a 48V 25A power adapter.
+------------------
 
 
 ## 🗺️ Roadmap & Status
@@ -105,28 +112,28 @@ We are committed to continuously maintaining and adapting to mainstream robot de
 | **Isaac Sim Simulation** | 🚧 In Progress  | Import USD models and enable simulated teleoperation | [delay for add additional courses: 2026.06.20] |
 | **LeRobot Integration** | ✅ Completed  | Adaptation to the Hugging Face LeRobot training framework | [Getting Started with LeRobot-based reBot Arm](https://wiki.seeedstudio.com/rebot_arm_b601_dm_lerobot/) |
 | **Depth Camera Integration** | ✅ Completed  | Visual Grasping Demonstration Based on YOLO and Depth Camera | [Getting Started with Visual Grasping Demo](https://wiki.seeedstudio.com/rebot_arm_b601_dm_grasping_demo/) |
+| **reSpeaker Voice Integration** | ✅ Completed  | Add reSpeaker Flex 4-mic array to build a voice-driven intelligent robot arm control system with spatial awareness | [reBot Arm B601-DM Voice Control](https://wiki.seeedstudio.com/control_rebot_arm_using_voice_with_respeaker_flex/) |
 | **Gradual Updates of the Latest Algorithms** | ⏳ Planned | Mainstream algorithms will be updated progressively | Ongoing |
 | **Launch of a Series of Completely Free Courses** | ⏳ Planned | Mainstream algorithms will be updated progressively | Ongoing |
 
 #### Contributions from Developers 
 | Supported Ecosystem | Authors | Description / Estimated Release Date | Related Documentation or Repository |
-| :--- | :---: | :--- | :--- | 
-| **ROS2 (Humble)** | [@danieldoradotalaveron-rb](https://github.com/danieldoradotalaveron-rb) | **Passive diagnostics monitor** (`rebotarm_monitor_ros2`): `/diagnostics` overlay for `rqt_robot_monitor`; serial/CAN-aware aggregator. | [rebotarm_monitor_ros2](https://github.com/danieldoradotalaveron-rb/rebotarm_monitor_ros2) |
-| **ROS2 (Humble)** | [@danieldoradotalaveron-rb](https://github.com/danieldoradotalaveron-rb) | **Safe park & shutdown**: capture rest pose on connect; slow return on shutdown or `/rebotarm/park` instead of dropping from q=0. | [reBotArmController_ROS2](https://github.com/danieldoradotalaveron-rb/reBotArmController_ROS2) |
-| **ROS2 (Humble)** | [@danieldoradotalaveron-rb](https://github.com/danieldoradotalaveron-rb) | **Gravity compensation (smooth stop)**: MIT ramp-out when exiting gravity compensation; prevents audible clack and abrupt jerk/instability before pos_vel handoff. | [reBotArmController_ROS2](https://github.com/danieldoradotalaveron-rb/reBotArmController_ROS2) |
+| :--- | :---: | :--- | :--- |
+| **ROS2 (Humble), third_party integration, URDF / rebotarm_bringup** | [@danieldoradotalaveron-rb](https://github.com/danieldoradotalaveron-rb) | 1. **Passive diagnostics monitor** (`rebotarm_monitor_ros2`): `/diagnostics` overlay for `rqt_robot_monitor`, serial/CAN-aware aggregator;<br>2. **Safe park & shutdown**: Capture rest pose on connect, slow return on shutdown or `/rebotarm/park` to prevent sudden drop;<br>3. **Gravity compensation (smooth stop)**: MIT ramp-out when exiting gravity compensation to eliminate clack, jerk and instability during pos/vel handoff;<br>4. **Gamepad teleop with IK/FK and safety measures**: Gamepad control for end-effector via IK, live robot state visualization in RViz (simulation-only test);<br>5. **D405 eye-in-hand TF**: Xacro setup under `end_link` in `rebotarm_bringup` for RViz visualization & TF only (no driver/depth/intrinsics). Mount pose adjustable via launch file, bracket calibration not completed. Teleop FK/IK uses arm-only `fixend_core` URDF, full xacro for RSP/RViz. | [rebotarm_monitor_ros2](https://github.com/danieldoradotalaveron-rb/rebotarm_monitor_ros2)、[reBotArmController_ROS2](https://github.com/danieldoradotalaveron-rb/reBotArmController_ROS2) |
 
 ### reBot Arm B601 RS
 
 | Supported Ecosystem | Status | Description / Estimated Release Date | Related Documentation |
 | :--- | :---: | :--- | :--- |
 | **Basic Motor Usage** | ✅ Completed | Basic motion control and API encapsulation | [Robstride](https://wiki.seeedstudio.com/cn/robstride_control/) |
-| **Open-Sourcing of the New STEP 3D Structural Parts and BOM** | 🚧 In Progress | STEP files for all parts in the new version, parts BOM, and reference prices for all machined components | Expected [2026.05] |
-| **Assembly Video** | 🚧 In Progress | Ultra-detailed assembly steps and video | [Expected 2026.05] |
-| **ROS2 (Humble)** | ⏳ Planned | Core drivers have been completed, and MoveIt2 is currently being optimized | [Expected 2026.05] |
-| **LeRobot Integration** | ⏳ Planned | Adaptation to the Hugging Face LeRobot training framework | [Expected 2026.05] |
-| **Pinocchio Integration** | ⏳ Planned | Adaptation to the Pinocchio framework, enabling forward/inverse kinematics and gravity compensation for the robotic arm | [Expected 2026.05] |
-| **Isaac Sim Simulation** | ⏳ Planned | Import USD models and enable simulated teleoperation | [Expected 2026.05] |
-| **Gradual Updates of the Latest Algorithms** | ⏳ Planned | Mainstream algorithms will be updated progressively | Ongoing |
+| **Open-Sourcing of the New STEP 3D Structural Parts and BOM** | 🚧 In Progress | STEP files for all parts in the new version, parts BOM, and reference prices for all machined components | Expected [2026.06] |
+|**Getting Started**|| ✅ Completed | Quick start of B601-RS| [Getting Started with reBot Arm B601-RS](https://wiki.seeedstudio.com/rebot_b601_rs_getting_started/) |
+| **Assembly Video** | 🚧 In Progress | Ultra-detailed assembly steps and video | [Expected 2026.06] |
+| **ROS2 (Humble)** | ⏳ Planned | Core drivers have been completed, and MoveIt2 is currently being optimized | [Expected 2026.06] |
+| **LeRobot Integration** | ⏳ Planned | Adaptation to the Hugging Face LeRobot training framework | [Expected 2026.06] |
+| **Pinocchio Integration** | ⏳ Planned | Adaptation to the Pinocchio framework, enabling forward/inverse kinematics and gravity compensation for the robotic arm | [Expected 2026.06] |
+| **Isaac Sim Simulation** | ⏳ Planned | Import USD models and enable simulated teleoperation | Ongoing |
+| **Gradual Updates of the Latest Algorithms** | ⏳ Planned | Mainstream algorithms will be updated progressively | On going |
 | **Launch of a Series of Completely Free Courses** | ⏳ Planned | Mainstream algorithms will be updated progressively | Ongoing |
 
 ---
@@ -135,16 +142,16 @@ We are committed to continuously maintaining and adapting to mainstream robot de
 
 reBot-DevArm is designed for desktop Embodied AI applications, balancing payload capacity with flexibility.
 
-| Parameter | reBot Arm B601-DM |
-| :--- | :--- |
-| **Recommended Continuous Payload** | Less than 1.5 kg within 70% of arm reach workspace |
-| **Recommended Payload** | **1.5 kg** |
-| **Max Reach** | **650 mm** |
-| **Weight** | Approx. 4.5 kg |
-| **Repeatability** | < 0.2 mm |
-| **Degrees of Freedom (DOF)** | 6 DOF + 1 Gripper (Open source CAN servo gripper and joint motor gripper coming soon) |
-| **Supported Platforms/Ecosystems** | ROS1, ROS2, LeRobot, Pinocchio, Isaac Sim, Python SDK |
-| **Supply Voltage** | DC 24V |
+| Parameter | reBot Arm B601-DM | reBot Arm B601-RS|
+| :--- | :--- | :--- |
+| **Payload** | 1.5kg | **2.5kg** |
+| **Recommended Workspace** | 70% arm reach workspace | 70% arm reach workspace |
+| **Max Reach** | 767 mm | **754 mm** |
+| **Weight** | **Approx. 4.5 kg** | Approx. 6.7 kg |
+| **Repeatability** | < 0.2 mm | < 0.2 mm |
+| **Degrees of Freedom (DOF)** | 6 DOF + 1 Gripper | 6 DOF + 1 Gripper |
+| **Supported Platforms/Ecosystems** | ROS1, ROS2, LeRobot, Pinocchio, Isaac Sim, Python SDK | ROS1, ROS2, LeRobot, Pinocchio, Isaac Sim, Python SDK |
+| **Supply Voltage** | DC 24V | DC 48V |
 
 ## Feedback from the community
 | <img src="/community/GEM-4.png" height="100"> | <img src="/community/from_Linyan.png" height="100">   |<img src="/community/from_Diddi.png" height="100">  |<img src="/community/from_Henderson.jpg" height="100">  | <img src="/community/from_Sameer.png" height="100">|
@@ -186,7 +193,7 @@ reBot-DevArm is not just a robotic arm, but a robotics learning community. We sh
 #### 📡 Sensors & Peripherals
 *   **🚗 Motors & Servos**: [Damiao / Gogo / Robstride / Mita / Feite / Fashion Star](https://wiki.seeedstudio.com/robotics_page/)
 *   **👁️ Visual Perception**: [Depth Cameras / LiDAR / Vision Algorithms](https://wiki.seeedstudio.com/robotics_page/)
-*   **👂 Auditory Interaction**: [ReSpeaker Mic Arrays / Speech Recognition](https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/)
+*   **👂 Voice Interaction**: [reSpeaker Mic Arrays/Voice Control/Spatial Awareness(DoA)](https://wiki.seeedstudio.com/control_rebot_arm_using_voice_with_respeaker_flex/)
 *   **🧭 Motion & Attitude**: [IMU (6-axis/9-axis) / Gyroscopes / Magnetometers](https://wiki.seeedstudio.com/Sensor/IMU/)
 *   **🤖 Comprehensive Kits**: [More Robotics Sensors & Driver Examples](https://wiki.seeedstudio.com/robotics_page/)
 

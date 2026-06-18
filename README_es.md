@@ -1,7 +1,7 @@
 # 🦾 reBot-DevArm: Brazo Robótico de Código Abierto para Todos los Desarrolladores
 
 <p align="center">
-  <img src="./media/v1.1.png" alt="Banner de reBot-DevArm">
+  <img src="./media/RS5_56.png" alt="Banner de reBot-DevArm">
 </p>
 
 <p align="center">
@@ -121,16 +121,16 @@ Estamos comprometidos a mantener y adaptarnos continuamente a los ecosistemas pr
 
 reBot-DevArm está diseñado para aplicaciones de IA Corpórea en escritorio, equilibrando capacidad de carga y flexibilidad.
 
-| Parameter                      | reBot Arm B601-DM                                                                            |
-| :----------------------------- | :------------------------------------------------------------------------------------------- |
-| **Carga continua recomendada** | Menos de 1.5 kg dentro del 70% del alcance                                                   |
-| **Carga recomendada**          | **1.5 kg**                                                                                   |
-| **Alcance máximo**             | **650 mm**                                                                                   |
-| **Peso**                       | Aprox. 4.5 kg                                                                                |
-| **Repetibilidad**              | < 0.2 mm                                                                                     |
-| **Grados de libertad (DOF)**   | 6 DOF + 1 pinza (pinza servo CAN de código abierto y pinza con motor articular próximamente) |
-| **Plataformas compatibles**    | ROS1, ROS2, LeRobot, Pinocchio, Isaac Sim, Python SDK                                        |
-| **Voltaje de alimentación**    | DC 24V                                                                                       |
+| Parámetro | reBot Arm B601-DM | reBot Arm B601-RS |
+| :--- | :--- | :--- |
+| **Carga útil (Payload)** | 1.5 kg | **2.5 kg** |
+| **Espacio de trabajo recomendado** | 70% del alcance del brazo | 70% del alcance del brazo |
+| **Alcance máximo (Reach)** | 650 mm | **754 mm** |
+| **Peso (Weight)** | **Aprox. 4.5 kg** | Aprox. 6.7 kg |
+| **Repetibilidad** | < 0.2 mm | < 0.2 mm |
+| **Grados de libertad (DOF)** | 6 DOF + 1 pinza | 6 DOF + 1 pinza |
+| **Plataformas/ecosistemas compatibles** | ROS1, ROS2, LeRobot, Pinocchio, Isaac Sim, Python SDK | ROS1, ROS2, LeRobot, Pinocchio, Isaac Sim, Python SDK |
+| **Voltaje de alimentación** | DC 24V | DC 48V |
 
 ----
 

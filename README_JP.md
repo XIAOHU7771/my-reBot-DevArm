@@ -1,7 +1,7 @@
 # 🦾 reBot-DevArm：すべての開発者のためのオープンソースロボットアーム
 
 <p align="center">
-  <img src="./media/v1.1.png" alt="reBot-DevArm バナー">
+  <img src="./media/RS5_56.png" alt="reBot-DevArm バナー">
 </p>
 
 <p align="center">
@@ -125,16 +125,16 @@
 
 reBot-DevArm は、デスクトップ向け Embodied AI アプリケーションのために設計されており、可搬重量と柔軟性のバランスを取っています。
 
-| パラメータ | reBot Arm B601-DM |
-| :--- | :--- |
-| **推奨連続可搬重量** | アーム到達範囲ワークスペースの 70% 以内で 1.5 kg 未満 |
-| **推奨可搬重量** | **1.5 kg** |
-| **最大リーチ** | **650 mm** |
-| **重量** | 約 4.5 kg |
-| **繰り返し精度** | < 0.2 mm |
-| **自由度（DOF）** | 6 DOF + 1 グリッパー（オープンソース CAN サーボグリッパーおよび関節モーターグリッパーは近日公開予定） |
-| **対応プラットフォーム/エコシステム** | ROS1、ROS2、LeRobot、Pinocchio、Isaac Sim、Python SDK |
-| **供給電圧** | DC 24V |
+| パラメータ | reBot Arm B601-DM | reBot Arm B601-RS |
+| :--- | :--- | :--- |
+| **作業負荷 (Payload)** | 1.5 kg | **2.5 kg** |
+| **推奨作業空間** | アーム到達範囲ワークスペースの 70% | アーム到達範囲ワークスペースの 70% |
+| **最大リーチ (Reach)** | 650 mm | **754 mm** |
+| **自重 (Weight)** | **約 4.5 kg** | 約 6.7 kg |
+| **繰り返し精度** | < 0.2 mm | < 0.2 mm |
+| **自由度 (DOF)** | 6 DOF + 1 グリッパー | 6 DOF + 1 グリッパー |
+| **対応プラットフォーム/エコシステム** | ROS1、ROS2、LeRobot、Pinocchio、Isaac Sim、Python SDK | ROS1、ROS2、LeRobot、Pinocchio、Isaac Sim、Python SDK |
+| **供給電圧** | DC 24V | DC 48V |
 
 ## コミュニティからのフィードバック
 | <img src="/community/from_Linyan.png" height="100">   |<img src="/community/from_Diddi.png" height="100">  |<img src="/community/from_Henderson.jpg" height="100">  | <img src="/community/from_Sameer.png" height="100">|

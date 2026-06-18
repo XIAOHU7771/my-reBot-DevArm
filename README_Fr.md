@@ -1,7 +1,7 @@
 # 🦾 reBot-DevArm : bras robotique open source pour tous les développeurs
 
 <p align="center">
-  <img src="./media/v1.1.png" alt="Bannière reBot-DevArm">
+  <img src="./media/RS5_56.png" alt="Bannière reBot-DevArm">
 </p>
 
 <p align="center">
@@ -122,16 +122,16 @@ Nous nous engageons à maintenir et à adapter en continu les principaux écosys
 
 reBot-DevArm est conçu pour des applications d’IA incarnée sur bureau, en équilibrant la capacité de charge utile et la flexibilité.
 
-| Paramètre | reBot Arm B601-DM |
-| :--- | :--- |
-| **Charge continue recommandée** | Moins de 1,5 kg dans 70 % de l’espace de travail de portée du bras |
-| **Charge utile recommandée** | **1,5 kg** |
-| **Portée maximale** | **650 mm** |
-| **Poids** | Environ 4,5 kg |
-| **Répétabilité** | < 0,2 mm |
-| **Degrés de liberté (DOF)** | 6 DOF + 1 pince (pince servo CAN open source et pince à moteur d’articulation bientôt disponibles) |
-| **Plateformes/écosystèmes pris en charge** | ROS1, ROS2, LeRobot, Pinocchio, Isaac Sim, SDK Python |
-| **Tension d’alimentation** | DC 24V |
+| Paramètre | reBot Arm B601-DM | reBot Arm B601-RS |
+| :--- | :--- | :--- |
+| **Charge utile (Payload)** | 1,5 kg | **2,5 kg** |
+| **Espace de travail recommandé** | 70 % de l’espace de travail de portée du bras | 70 % de l’espace de travail de portée du bras |
+| **Portée maximale (Reach)** | 650 mm | **754 mm** |
+| **Poids (Weight)** | **Env. 4,5 kg** | Env. 6,7 kg |
+| **Répétabilité** | < 0,2 mm | < 0,2 mm |
+| **Degrés de liberté (DOF)** | 6 DOF + 1 pince | 6 DOF + 1 pince |
+| **Plateformes/écosystèmes pris en charge** | ROS1, ROS2, LeRobot, Pinocchio, Isaac Sim, SDK Python | ROS1, ROS2, LeRobot, Pinocchio, Isaac Sim, SDK Python |
+| **Tension d’alimentation** | DC 24V | DC 48V |
 
 ----
 
