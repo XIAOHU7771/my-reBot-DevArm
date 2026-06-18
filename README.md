@@ -129,9 +129,10 @@ We are committed to continuously maintaining and adapting to mainstream robot de
 | **Open-Sourcing of the New STEP 3D Structural Parts and BOM** | 🚧 In Progress | STEP files for all parts in the new version, parts BOM, and reference prices for all machined components | Expected [2026.06] |
 |**Getting Started**|| ✅ Completed | Quick start of B601-RS| [Getting Started with reBot Arm B601-RS](https://wiki.seeedstudio.com/rebot_b601_rs_getting_started/) |
 | **Assembly Video** | 🚧 In Progress | Ultra-detailed assembly steps and video | [Expected 2026.06] |
-| **ROS2 (Humble)** | ⏳ Planned | Core drivers have been completed, and MoveIt2 is currently being optimized | [Expected 2026.06] |
+| **ROS2 (Humble)** | ✅ Completed | ROS2 integrated reBot Arm controller with support for kinematics, trajectory planning, gravity compensation and MoveIt2 | [reBot Arm B601-DM ROS2 Integration Guide](https://wiki.seeedstudio.com/rebot_arm_b601_rs_ros2_integration/) |
 | **LeRobot Integration** | ⏳ Planned | Adaptation to the Hugging Face LeRobot training framework | [Expected 2026.06] |
 | **Pinocchio Integration** | ⏳ Planned | Adaptation to the Pinocchio framework, enabling forward/inverse kinematics and gravity compensation for the robotic arm | [Expected 2026.06] |
+| **Depth Camera Integration** | ✅ Completed  | Visual Grasping Demonstration Based on YOLO and Depth Camera | [Getting Started with Visual Grasping Demo](https://wiki.seeedstudio.com/rebot_arm_b601_rs_grasping_demo/) |
 | **Isaac Sim Simulation** | ⏳ Planned | Import USD models and enable simulated teleoperation | Ongoing |
 | **Gradual Updates of the Latest Algorithms** | ⏳ Planned | Mainstream algorithms will be updated progressively | On going |
 | **Launch of a Series of Completely Free Courses** | ⏳ Planned | Mainstream algorithms will be updated progressively | Ongoing |

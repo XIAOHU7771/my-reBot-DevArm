@@ -120,12 +120,13 @@ reBot机械臂RS版本在[矽递科技电商平台](https://detail.tmall.com/ite
 | 适配生态 | 状态 | 说明 / 预计发布时间 | 相关文档 |
 | :--- | :---: | :--- | :--- |
 | **电机基本使用** | ✅ 完成 | 基础运动控制与API封装 | [灵足时代](https://wiki.seeedstudio.com/cn/robstride_control/)|
-| **快速上手** | ✅ 完成 | 机械臂快速上手教程 | [Wiki]https://wiki.seeedstudio.com/cn/rebot_b601_rs_getting_started/)|
+| **快速上手** | ✅ 完成 | 机械臂快速上手教程 | [Wiki](https://wiki.seeedstudio.com/cn/rebot_b601_rs_getting_started/)|
 | **新版本STEP 3D结构件及BOM开源** | 🚧 进行中 | 新版本所有零件的STEP格式、零部件BOM、及所有加工件参考价格 | 预计[2026.06] |
 | **组装视频** | 🚧 进行中 | 超详细的组装步骤及视频 |  [预计 2026.06] |
-| **ROS2 (Humble)** |⏳ 计划中 | 核心驱动已完成，正在优化MoveIt2 |[预计 2026.06]|
+| **ROS2 (Humble)** |✅ 完成  | ROS2集成机械臂控制器、支持机械臂运动学、轨迹规划、重力补偿功能以及MoveIt2 |[reBot Arm B601-RS ROS2使用教程](https://wiki.seeedstudio.com/cn/rebot_arm_b601_rs_ros2_integration/)|
 | **LeRobot 适配** | ⏳ 计划中 | 适配 Hugging Face LeRobot 训练框架 | [预计 2026.06]|
 | **Pinocchio 适配** | ⏳ 计划中 | 适配 Pinocchio框架、实现机械臂正逆运动学及动力学重力补偿功能 | [预计 2026.06]|
+| **深度相机集成** | ✅ 完成 | 基于 YOLO 与深度相机的视觉夹取演示 | [reBot Arm B601-RS 视觉夹取 Demo](https://wiki.seeedstudio.com/cn/rebot_arm_b601_rs_grasping_demo/) |
 | **Isaac Sim 仿真** | ⏳ 计划中 | 导入USD模型并实现仿真遥操作 | [预计 2026.06]|
 | **逐步更新最新算法** | ⏳ 计划中 | 逐步更新主流算法 | 持续进行 |
 | **推出系列完全免费课程** | ⏳ 计划中 | 逐步更新主流算法 | 持续进行 |
