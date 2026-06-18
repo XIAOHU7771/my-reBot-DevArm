@@ -122,17 +122,16 @@ Nous nous engageons à maintenir et à adapter en continu les principaux écosys
 
 | Écosystème pris en charge | État | Description / date de publication estimée | Documentation associée |
 | :--- | :---: | :--- | :--- |
-| **Utilisation de base des moteurs** | ✅ Terminé | Contrôle de mouvement de base et encapsulation d'API | [Robstride](https://wiki.seeedstudio.com/cn/robstride_control/) |
-| **Open source des nouvelles pièces structurelles STEP 3D et de la BOM** | 🚧 En cours | Fichiers STEP de toutes les pièces de la nouvelle version, BOM des pièces et prix de référence de toutes les pièces usinées | Expected [2026.06] |
-| **Getting Started** | ✅ Terminé | Démarrage rapide de B601-RS | [Getting Started with reBot Arm B601-RS](https://wiki.seeedstudio.com/rebot_b601_rs_getting_started/) |
-| **Vidéo d'assemblage** | 🚧 En cours | Étapes d'assemblage ultra détaillées et vidéo | [Expected 2026.06] |
-| **ROS2 (Humble)** | ✅ Terminé | Contrôleur reBot Arm intégré à ROS2 avec prise en charge de la cinématique, de la planification de trajectoire, de la compensation gravitationnelle et de MoveIt2 | [Guide d'intégration ROS2 du reBot Arm B601-RS](https://wiki.seeedstudio.com/rebot_arm_b601_rs_ros2_integration/) |
-| **Intégration LeRobot** | ⏳ Planifié | Adaptation au framework d'entraînement Hugging Face LeRobot | [Expected 2026.06] |
-| **Intégration Pinocchio** | ⏳ Planifié | Adaptation au framework Pinocchio, permettant la cinématique directe/inverse et la compensation gravitationnelle du bras robotique | [Expected 2026.06] |
-| **Intégration caméra de profondeur** | ✅ Terminé | Démonstration de préhension visuelle basée sur YOLO et caméra de profondeur | [Premiers pas avec la démo de préhension visuelle](https://wiki.seeedstudio.com/rebot_arm_b601_rs_grasping_demo/) |
-| **Simulation Isaac Sim** | ⏳ Planifié | Importation de modèles USD et activation de la téléopération simulée | Ongoing |
-| **Mises à jour progressives des derniers algorithmes** | ⏳ Planifié | Les algorithmes grand public seront mis à jour progressivement | On going |
-| **Lancement d'une série de cours entièrement gratuits** | ⏳ Planifié | Les algorithmes grand public seront mis à jour progressivement | Ongoing |
+| **Utilisation de base des moteurs** | ✅ Terminé | Contrôle de mouvement de base et encapsulation d’API | [Robstride](https://wiki.seeedstudio.com/cn/robstride_control/) |
+| **Open source des nouvelles pièces structurelles STEP 3D et de la BOM** | 🚧 En cours | Fichiers STEP de toutes les pièces de la nouvelle version, BOM des pièces et prix de référence de toutes les pièces usinées | Prévu [2026.05] |
+| **Vidéo d’assemblage** | 🚧 En cours | Étapes d’assemblage ultra détaillées et vidéo | [Prévu 2026.05] |
+| **ROS2 (Humble)** | ⏳ Planifié | Les pilotes principaux sont terminés, et MoveIt2 est actuellement en cours d’optimisation | [Prévu 2026.05] |
+| **Intégration LeRobot** | ⏳ Planifié | Adaptation au framework d’entraînement Hugging Face LeRobot | [Prévu 2026.05] |
+| **Intégration Pinocchio** | ✅ Terminé | Adaptation au framework Pinocchio, permettant la cinématique directe/inverse et la compensation gravitationnelle pour le bras robotique | [Getting Started with Pinocchio for reBot Arm B601-DM](https://wiki.seeedstudio.com/rebot_arm_b601_rs_pinocchio_meshcat/) ainsi que [Github code de contrôle](https://github.com/vectorBH6/reBotArm_control_py) |
+| **Simulation Isaac Sim** | ⏳ Planifié | Importation de modèles USD et activation de la téléopération simulée | [Prévu 2026.05] |
+| **Mises à jour progressives des derniers algorithmes** | ⏳ Planifié | Les algorithmes grand public seront mis à jour progressivement | En continu |
+| **Lancement d’une série de cours entièrement gratuits** | ⏳ Planifié | Les algorithmes grand public seront mis à jour progressivement | En continu |
+
 
 ---
 

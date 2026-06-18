@@ -123,19 +123,17 @@ Estamos comprometidos a mantener y adaptarnos continuamente a los ecosistemas pr
 
 ### reBot Arm B601 RS
 
-| Ecosistema compatible | Estado | Descripción / Fecha estimada de lanzamiento | Documentación relacionada |
-| :--- | :---: | :--- | :--- |
-| **Uso básico del motor** | ✅ Completado | Control básico de movimiento y encapsulación de API | [Robstride](https://wiki.seeedstudio.com/cn/robstride_control/) |
-| **Código abierto de las nuevas piezas estructurales 3D STEP y BOM** | 🚧 En progreso | Archivos STEP de todas las piezas de la nueva versión, BOM de piezas y precios de referencia de todos los componentes mecanizados | Expected [2026.06] |
-| **Getting Started** | ✅ Completado | Inicio rápido de B601-RS | [Getting Started with reBot Arm B601-RS](https://wiki.seeedstudio.com/rebot_b601_rs_getting_started/) |
-| **Video de ensamblaje** | 🚧 En progreso | Pasos de ensamblaje ultra detallados y video | [Expected 2026.06] |
-| **ROS2 (Humble)** | ✅ Completado | Controlador ROS2 integrado para reBot Arm con soporte para cinemática, planificación de trayectorias, compensación de gravedad y MoveIt2 | [Guía de integración ROS2 de reBot Arm B601-RS](https://wiki.seeedstudio.com/rebot_arm_b601_rs_ros2_integration/) |
-| **Integración LeRobot** | ⏳ Planificado | Adaptación al framework de entrenamiento Hugging Face LeRobot | [Expected 2026.06] |
-| **Integración Pinocchio** | ⏳ Planificado | Adaptación al framework Pinocchio, que permite cinemática directa/inversa y compensación de gravedad para el brazo robótico | [Expected 2026.06] |
-| **Integración con cámara de profundidad** | ✅ Completado | Demostración de agarre visual basada en YOLO y cámara de profundidad | [Primeros pasos con la demo de agarre visual](https://wiki.seeedstudio.com/rebot_arm_b601_rs_grasping_demo/) |
-| **Simulación Isaac Sim** | ⏳ Planificado | Importación de modelos USD y teleoperación simulada | Ongoing |
-| **Actualizaciones graduales de los últimos algoritmos** | ⏳ Planificado | Los algoritmos principales se actualizarán progresivamente | On going |
-| **Lanzamiento de una serie de cursos completamente gratuitos** | ⏳ Planificado | Los algoritmos principales se actualizarán progresivamente | Ongoing |
+| Ecosistema compatible                   |     Estado     | Descripción / Fecha estimada de lanzamiento | Documentación relacionada                                       |
+| :-------------------------------------- | :------------: | :------------------------------------------ | :-------------------------------------------------------------- |
+| **Uso básico del motor**                |  ✅ Completado  | Control básico y encapsulación de API       | [Robstride](https://wiki.seeedstudio.com/cn/robstride_control/) |
+| **Código abierto de piezas STEP y BOM** | 🚧 En progreso | Archivos STEP, BOM y precios de referencia  | Expected [2026.05]                                           |
+| **Video de ensamblaje**                 | 🚧 En progreso | Guía de ensamblaje detallada                | [Expected 2026.05]                                           |
+| **ROS2 (Humble)**                       |  ⏳ Planificado | Drivers listos, optimización en curso       | [Expected 2026.05]                                              |
+| **Integración con LeRobot**             |  ⏳ Planificado | Framework de aprendizaje robótico           | [Expected 2026.05]                                              |
+| **Integración con Pinocchio**           |  ✅ Completado | Cinemática y compensación de gravedad       | [Introducción a Pinocchio y MeshCat para reBot Arm B601-DM](https://wiki.seeedstudio.com/es/rebot_arm_b601_rs_pinocchio_meshcat/) y [Github Código de control](https://github.com/vectorBH6/reBotArm_control_py)                                              |
+| **Simulación en Isaac Sim**             |  ⏳ Planificado | Simulación robótica                         | [Expected 2026.05]                                              |
+| **Actualización de algoritmos**         |  ⏳ Planificado | Actualizaciones continuas                   | Ongoing                                                         |
+| **Cursos gratuitos**                    |  ⏳ Planificado | Cursos abiertos                             | Ongoing                                                         |
 
 ---
 

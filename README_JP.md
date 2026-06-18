@@ -124,16 +124,15 @@
 | 対応エコシステム | 状態 | 説明 / 予定公開日 | 関連ドキュメント |
 | :--- | :---: | :--- | :--- |
 | **モーター基本使用** | ✅ 完了 | 基本的なモーション制御と API ラッパー化 | [Robstride](https://wiki.seeedstudio.com/cn/robstride_control/) |
-| **新バージョン STEP 3D 構造部品および BOM のオープンソース化** | 🚧 進行中 | 新バージョンの全パーツの STEP ファイル、部品 BOM、およびすべての加工部品の参考価格 | Expected [2026.06] |
-| **Getting Started** | ✅ 完了 | B601-RS のクイックスタート | [Getting Started with reBot Arm B601-RS](https://wiki.seeedstudio.com/rebot_b601_rs_getting_started/) |
-| **組み立て動画** | 🚧 進行中 | 超詳細な組み立て手順と動画 | [Expected 2026.06] |
-| **ROS2 (Humble)** | ✅ 完了 | 運動学、軌道計画、重力補償、MoveIt2 をサポートする ROS2 統合 reBot Arm コントローラー | [reBot Arm B601-RS ROS2 統合ガイド](https://wiki.seeedstudio.com/rebot_arm_b601_rs_ros2_integration/) |
-| **LeRobot 統合** | ⏳ 計画中 | Hugging Face LeRobot トレーニングフレームワークへの対応 | [Expected 2026.06] |
-| **Pinocchio 統合** | ⏳ 計画中 | Pinocchio フレームワークへの対応により、ロボットアームの順運動学/逆運動学および重力補償を実現 | [Expected 2026.06] |
-| **深度カメラ統合** | ✅ 完了 | YOLO と深度カメラに基づくビジュアル把持デモ | [ビジュアル把持デモ入門](https://wiki.seeedstudio.com/rebot_arm_b601_rs_grasping_demo/) |
-| **Isaac Sim シミュレーション** | ⏳ 計画中 | USD モデルをインポートし、シミュレーションによる遠隔操作を実現 | Ongoing |
-| **最新アルゴリズムの段階的更新** | ⏳ 計画中 | 主流アルゴリズムを段階的に更新予定 | On going |
-| **完全無料コースシリーズの提供** | ⏳ 計画中 | 主流アルゴリズムを段階的に更新予定 | Ongoing |
+| **新バージョン STEP 3D 構造部品および BOM のオープンソース化** | 🚧 進行中 | 新バージョンの全パーツの STEP ファイル、部品 BOM、およびすべての加工部品の参考価格 | 予定 [2026.05] |
+| **組み立て動画** | 🚧 進行中 | 超詳細な組み立て手順と動画 | [予定 2026.05] |
+| **ROS2 (Humble)** | ⏳ 計画中 | コアドライバはすでに完成しており、現在 MoveIt2 を最適化中です | [予定 2026.05] |
+| **LeRobot 対応** | ⏳ 計画中 | Hugging Face LeRobot 学習フレームワークへの対応 | [予定 2026.05] |
+| **Pinocchio 対応** | ✅ 完了 | Pinocchio フレームワークへの対応を行い、ロボットアームの順運動学/逆運動学および重力補償機能を実現 | [reBot Arm B601-DM 向け Pinocchio と MeshCat 入門](https://wiki.seeedstudio.com/ja/rebot_arm_b601_rs_pinocchio_meshcat/) および [Github 制御コード](https://github.com/vectorBH6/reBotArm_control_py) |
+| **Isaac Sim シミュレーション** | ⏳ 計画中 | USD モデルをインポートし、シミュレーションによる遠隔操作を実現 | [予定 2026.05] |
+| **最新アルゴリズムの段階的更新** | ⏳ 計画中 | 主流アルゴリズムを段階的に更新予定 | 継続中 |
+| **完全無料コースシリーズの提供** | ⏳ 計画中 | 主流アルゴリズムを段階的に更新予定 | 継続中 |
+
 
 ---
 
