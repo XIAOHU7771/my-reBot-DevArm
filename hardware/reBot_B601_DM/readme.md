@@ -179,18 +179,19 @@ The robotic arm is shipped without a power supply by default. You may connect yo
 | Power AC Wiring | 1.5mm²; Red, Blue, Yellow x1 each(User must crimp terminals to the wire — pre-crimped leads not included.); 10CM | 3 | $0.99 | [aliexpress](https://www.aliexpress.com/item/1005008648016252.html?spm=a2g0o.productlist.main.2.15c9ZpluZpluHP&algo_pvid=09efee83-d80c-4ece-b588-3b1ef73279a3&algo_exp_id=09efee83-d80c-4ece-b588-3b1ef73279a3-1&pdp_ext_f=%7B%22order%22%3A%22230%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%213.58%210.99%21%21%2124.09%216.65%21%400b0b305117800339070873795e0f3d%2112000046086542230%21sea%21US%216593543849%21ABX%211%210%21n_tag%3A-29910%3Bd%3A518b3f9d%3Bm03_new_user%3A-29895%3BpisId%3A5000000207178484&curPageLogUid=74aJ9L7lm7hs&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005008648016252%7C_p_origin_prod%3A&gatewayAdapt=4itemAdapt) | <img src="./Purchased_Parts/RV Grounding Wire Coil with Y-Terminal Lugs.png" width="80"> |
 | 3-in-1 IEC Inlet Socket | Quick-connect type with red switch (Dual Nuts) | 1 | $1.98 | [aliexpress](https://www.aliexpress.com/item/1005005962021242.html?spm=a2g0o.imagesearchproductlist.main.17.7db7cZZdcZZdCY&algo_pvid=270b0987-1973-41ad-a2b9-6fe008f9edb5&algo_exp_id=270b0987-1973-41ad-a2b9-6fe008f9edb5&pdp_ext_f=%7B%22order%22%3A%22346%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%213.31%211.98%21%21%2122.30%2113.35%21%400b0b305117800327806706342e118f%2112000035062406338%21sea%21US%216593543849%21ABX%211%210%21n_tag%3A-29910%3Bd%3A518b3f9d%3Bm03_new_user%3A-29895%3BpisId%3A5000000204886261&curPageLogUid=87JUDbPbch2i&utparam-url=scene%3Aimage_search%7Cquery_from%3Apc_web_image_search%7Cx_object_id%3A1005005962021242%7C_p_origin_prod%3A) | <img src="./Purchased_Parts/3-in-1 IEC Inlet Socket.png" width="80"> |
 | XT30 to XT60 adapter cable plug 12awg | XT30U female to XT60 male, cable length 50cm | 1 | 9.98$ | [amazon](https://www.amazon.com/MEIRIYFA-Extension-Female-Adapter-Silicone/dp/B0B3DMJVV8/ref=sr_1_27?crid=18IGT0X1XS48F&dib=eyJ2IjoiMSJ9.qYRdGYT8G-SZEIPj6hMxuQLGxfv2AtkCiY3gitqnCn5xQhGZdsRAFETuJHlWK8od694BVQ9S5s-Pj7SsVcJxjxrXykP4sit5Cmz2HvRUzULa_jT-oGoR0ErPyaatF5aedauUQmY5bi6aYn5K_820VyPI6Jc-7L18WxPv0MVWxPMSduUx-Wu_VatV1AdePPQQsG63GQJm-JbW1p6lDP5gP1PTfDeoTd17xzb3QaooEDkJ9ktKNAjACX9UP7-xnS-vN7HTzX9NWkcKM8Ce0mYer_h5tnweVDzKnZlP65KMXDM.OXhg6VlhBUozkydCUQvH5OTfWZVSK-RkVZ-D5apJWzY&dib_tag=se&keywords=XT30+XT-30+to+XT60+XT-60+Male+Female+RC+Connector+Adapter+with+16awg+30cm&nsdOptOutParam=true&qid=1780818603&sprefix=xt30+xt-30+to+xt60+xt-60+male+female+rc+connector+adapter+with+16awg+3cm%2Caps%2C520&sr=8-27) | <img src="./Purchased_Parts/XT30U_female_to_XT60_male.png" width="80"> |
-| Countersunk Hex Socket Screw M4x10 | M4x10 | 4 | $0.37 | / | / |
-| Button Head Hex Socket Screw M4x6 | M4x6 | 2 | $0.36 | / | / |
-| Button Head Hex Socket Screw M3x8 | M3x8 | 2 | $0.32 | / | / |
+| 304 Stainless Steel Phillips Countersunk Head Screw | M4x6 | 6 | $0.37 | / | / |
+| 304 Stainless Steel Phillips Countersunk Head Screw | M3x8 | 2 | $0.36 | / | / |
+| 304 Stainless Steel Phillips Pan Head Screw | M3x8 | 2 | $0.32 | / | / |
+| Hex Nut | M3x2.5 | 2 | 2.10 CNY | / | / |
 
 
 #### Printed Parts BOM
 
 | Name | Image | Qty | Notes |
 |:---|:---|:---:|:---|
-| [Front Cover](./3D_Printed_Parts/DM-power-Top%20Cover.STEP) | <img src="./3D_Printed_Parts/images/DM-power-Top Cover.png" width="80"> | 1 | PLA, 0.4mm Nozzle, 0.2mm Layer Height, 30% Infill |
-| [Rear Cover](./3D_Printed_Parts/DM-power-Bottom%20Cover.STEP) | <img src="./3D_Printed_Parts/images/DM-power-Bottom Cover.png" width="80"> | 1 | PLA, 0.4mm Nozzle, 0.2mm Layer Height, 30% Infill |
-| [Front Cover Slider](./3D_Printed_Parts/DM-power-Top%20Cover-Sliding%20Cover.STEP) | <img src="./3D_Printed_Parts/images/DM-power-Top Cover-Sliding Cover.png" width="80"> | 1 | PLA, 0.4mm Nozzle, 0.2mm Layer Height, 30% Infill |
+| [Front Cover](./3D_Printed_Parts/DM-power-Top%20Cover.stp) | <img src="./3D_Printed_Parts/images/DM-power-Top Cover.png" width="80"> | 1 | PLA, 0.4mm Nozzle, 0.2mm Layer Height, 30% Infill |
+| [Rear Cover](./3D_Printed_Parts/DM-power-Bottom%20Cover.stp) | <img src="./3D_Printed_Parts/images/DM-power-Bottom Cover.png" width="80"> | 1 | PLA, 0.4mm Nozzle, 0.2mm Layer Height, 30% Infill |
+| [Front Cover Slider](./3D_Printed_Parts/DM-power-Top%20Cover-Sliding%20Cover.stp) | <img src="./3D_Printed_Parts/images/DM-power-Top Cover-Sliding Cover.png" width="80"> | 1 | PLA, 0.4mm Nozzle, 0.2mm Layer Height, 30% Infill |
 
 #### Power Supply Assembly
 
@@ -198,28 +199,33 @@ The power supply assembly is divided into two main sections: the Front Cover and
 
 ##### 1. Front Cover Assembly
 
-| Step | Operation Instructions | Image | Notes |
+| Step | Operation Instructions | Image | Remarks |
 |:---:|---|---|---|
-| 1-1 | Prepare all required parts and printed components for the front cover. | <img src="./Assembly_Steps/powerstep_images/1-1.jpg" width="80"> | Check that all parts are complete. |
-| 1-2 | Explanation of wiring sequence. Assemble strictly according to the diagram. | <img src="./Assembly_Steps/powerstep_images/1-2(1).png" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/1-2(2).png" width="80"><br><img src="./Assembly_Steps/powerstep_images/1-2(3).png" width="80"> | Follow the wiring order strictly. |
-| 1-3 | Install the XT60 connector. | <img src="./Assembly_Steps/powerstep_images/1-3(1).jpg" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/1-3(2).jpg" width="80"> | Use the included screws and nuts to secure. |
-| 1-4 | Install the 3-in-1 IEC inlet socket. | <img src="./Assembly_Steps/powerstep_images/1-4(1).jpg" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/1-4(2).jpg" width="80"> | Use M3×10 Button Head Hex Socket Screws. |
-| 1-5 | Internal wiring of the front cover. | <img src="./Assembly_Steps/powerstep_images/1-5(1).jpg" width="80"><br><img src="./Assembly_Steps/powerstep_images/1-5(2).jpg" width="80"> | Double-check connections against the wiring diagram. |
-| 1-6 | Secure the front cover to the sides of the power supply. | <img src="./Assembly_Steps/powerstep_images/1-6(1).jpg" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/1-6(2).jpg" width="80"> | M4×12 Countersunk Hex Socket Screws ×2. |
-| 1-7 | Install the sliding cover. | <img src="./Assembly_Steps/powerstep_images/1-7(1).jpg" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/1-7(2).jpg" width="80"> | Slide in from the bottom of the power supply. |
-| 1-8 | Secure the sliding cover. | <img src="./Assembly_Steps/powerstep_images/1-8.jpg" width="80"> | M4×8 Button Head Hex Socket Screws ×2. |
+| 1-1 | Prepare the parts and printed components required for front shell assembly | <img src="./Assembly_Steps/powerstep_images/1-1.png" width="80"> | Check that all parts are complete |
+| 1-2 | Wiring sequence instructions for each part; assemble according to the wiring sequence | <img src="./Assembly_Steps/powerstep_images/1-2(1).png" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/1-2(2).png" width="80"><br><img src="./Assembly_Steps/powerstep_images/1-2(3).png" width="80"> | Connect strictly according to the wiring sequence |
+| 1-3 | Install the XT60 connector | <img src="./Assembly_Steps/powerstep_images/1-3(1).png" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/1-3(2).png" width="80"> | Secure with 304 stainless steel Phillips countersunk head screws M3x8 and hex nuts M3x2.5 |
+| 1-4 | Install the 3-in-1 IEC socket | <img src="./Assembly_Steps/powerstep_images/1-4(1).png" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/1-4(2).png" width="80"> | Secure the 3-in-1 IEC socket with 304 stainless steel Phillips pan head screws M3x8 |
+| 1-5 | Internal wiring of the front shell | <img src="./Assembly_Steps/powerstep_images/1-5(1).png" width="80"><br><img src="./Assembly_Steps/powerstep_images/1-5(2).png" width="80"> | Check connections against the wiring sequence diagram |
+| 1-6 | Secure both sides of the front shell and the power supply | <img src="./Assembly_Steps/powerstep_images/1-6(1).png" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/1-6(2).png" width="80"> | M4x6 304 stainless steel Phillips countersunk head screws x2 |
+| 1-7 | Install the sliding cover | <img src="./Assembly_Steps/powerstep_images/1-7(1).png" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/1-7(2).png" width="80"> | Push in from the bottom of the power supply |
+| 1-8 | Secure the sliding cover | <img src="./Assembly_Steps/powerstep_images/1-8.png" width="80"> | M4x6 304 stainless steel Phillips countersunk head screws x2 |
 
-##### 2. Rear Cover Assembly
+---
 
-| Step | Operation Instructions | Image | Notes |
+##### 2. Rear Shell Assembly
+
+| Step | Operation Instructions | Image | Remarks |
 |:---:|---|---|---|
-| 2-1 | Prepare all required parts and printed components for the rear cover. | <img src="./Assembly_Steps/powerstep_images/2-1.jpg" width="80"> | Check accessory integrity. |
-| 2-2 | Assemble the rear cover with the power supply. | <img src="./Assembly_Steps/powerstep_images/2-2.jpg" width="80"> | Align positions carefully. |
-| 2-3 | Secure the rear cover to the sides of the power supply. | <img src="./Assembly_Steps/powerstep_images/2-3(1).jpg" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/2-3(2).jpg" width="80"> | M4×12 Countersunk Hex Socket Screws ×2. |
+| 2-1 | Prepare the parts and printed components required for rear shell assembly | <img src="./Assembly_Steps/powerstep_images/2-1.png" width="80"> | Check accessories for completeness |
+| 2-2 | Assemble the rear shell with the power supply | <img src="./Assembly_Steps/powerstep_images/2-2.png" width="80"> | Align the position |
+| 2-3 | Secure both sides of the rear shell and the power supply | <img src="./Assembly_Steps/powerstep_images/2-3(1).png" width="80" style="margin-right:4%;"><img src="./Assembly_Steps/powerstep_images/2-3(2).png" width="80"> | M4x6 304 stainless steel Phillips countersunk head screws x2 |
 
-##### 3. Final Assembly
+---
 
-| Step | Operation Instructions | Image | Notes |
+##### 3. Overall Completion
+
+| Step | Operation Instructions | Image | Remarks |
 |:---:|---|---|---|
-| 1 | Power supply assembly complete. | <img src="./Assembly_Steps/powerstep_images/3.jpg" width="80"> | Check that all screws are tightened securely. |
-  ---
+| 1 | Power supply solution assembly completed | <img src="./Assembly_Steps/powerstep_images/3.png" width="80"> | Check that all screws are tightened |
+
+---

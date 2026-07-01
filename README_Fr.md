@@ -179,6 +179,87 @@ reBot-DevArm est conçu pour des applications d’IA incarnée sur bureau, en é
 |  <img src="/hardware/reBot_B601_DM/3D_Printed_Parts/images/Soft_Finger.png" height="100">  |Bientôt disponible|
 | [Support de doigt (ABS/PLA)](/hardware/reBot_B601_DM/3D_Printed_Parts/Soft_Gripper_Mount.step) et [Doigt (TPU 95+)](/hardware/reBot_B601_DM/3D_Printed_Parts/Soft_Gripper_Finger.step)  |Bientôt disponible |
 
+### Matériel optionnel recommandé
+<table>
+  <thead>
+    <tr>
+      <th>Catégorie</th>
+      <th>Type</th>
+      <th>Aperçu</th>
+      <th>Produit</th>
+      <th>Lien</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8" align="center"><strong>Caméra</strong></td>
+      <td rowspan="6" align="center">Caméra de profondeur</td>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/0/-/0-101090144--orbbec-gemini-2-3d-camera.jpg" alt="Orbbec Gemini 2 3D Camera" width="120"></td>
+      <td><strong>Orbbec Gemini 2 3D Camera</strong></td>
+      <td><a href="https://www.seeedstudio.com/Orbbec-Gemini-2-3D-Camera-p-6464.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/0/1000000774.png" alt="Orbbec Gemini 336 Depth Camera" width="120"></td>
+      <td><strong>Orbbec Gemini 336 Depth Camera</strong></td>
+      <td><a href="https://www.seeedstudio.com/Orbbec-Gemini-336-3D-Camera-3D-p-6662.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-100010971-orbbec-gemini-335-lg.jpg" alt="Orbbec Gemini 335LG 3D Camera" width="120"></td>
+      <td><strong>Orbbec Gemini 335LG 3D Camera</strong></td>
+      <td><a href="https://www.seeedstudio.com/Orbbec-Gemini-335LG-3D-Camera-p-6541.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/0/0/0035718.png" alt="SLAMTEC Aurora S, Integrated Spatial Perception Module" width="120"></td>
+      <td><strong>SLAMTEC Aurora S</strong><br><sub>Integrated Spatial Perception Module</sub></td>
+      <td><a href="https://www.seeedstudio.com/SLAMTEC-Aurora-S-AI-Integrated-Spatial-Perception-System-p-6669.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/i/n/intel_realsense_d435i_34_1_1.jpg" alt="Intel RealSense Depth Camera D435i" width="120"></td>
+      <td><strong>Intel RealSense Depth Camera D435i</strong></td>
+      <td><a href="https://www.seeedstudio.com/Intel-RealSense-Depth-Camera-D435i-p-4423.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-100000540-realsense-d405-3d-camera.jpg" alt="RealSense Depth Camera D405" width="120"></td>
+      <td><strong>RealSense Depth Camera D405</strong></td>
+      <td><a href="https://www.seeedstudio.com/RealSense-D405-3D-Camera-p-6758.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" align="center">Caméra monoculaire</td>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/0/-/0-101090101-3mp-gmsl2-camera-module-190-degree.jpg" alt="Sensing SG3S-ISX031C-GMSL2F 3MP GMSL2 Camera" width="120"></td>
+      <td><strong>Sensing SG3S-ISX031C-GMSL2F 3MP GMSL2 Camera</strong></td>
+      <td><a href="https://www.seeedstudio.com/SG3S-ISX031C-GMSL2F-p-6245.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/s/2/s231.1.jpg" alt="ET-S231 Megapixel 120 Degree Wide-Angle 1080P USB Camera Module" width="120"></td>
+      <td><strong>ET-S231 Megapixel 120 Degree Wide-Angle 1080P USB Camera Module</strong></td>
+      <td><a href="https://www.seeedstudio.com/ET-S231-120-USB-Camera-p-6683.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" align="center"><strong>Microphone</strong></td>
+      <td rowspan="2" align="center">Réseau de micros</td>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-100070894-respeaker-flex-xvf3800-circular-4-with-xiao-esp32s3_1_.jpg" alt="reSpeaker Flex XVF3800 Circular-4 with XIAO ESP32S3" width="120"></td>
+      <td><strong>reSpeaker Flex XVF3800 Circular-4 with XIAO ESP32S3</strong><br><sub>AI Mic Array for Robotics and Embodied AI</sub></td>
+      <td><a href="https://www.seeedstudio.com/reSpeaker-Flex-XVF3800-Circular-4-with-XIAO-ESP32S3-p-6739.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/-/1-respeaker-xvf3800-4-mic-array.jpg" alt="reSpeaker XMOS XVF3800" width="120"></td>
+      <td><strong>reSpeaker XMOS XVF3800</strong><br><sub>AI-powered 4-Mic Array for Clear Voice Even in Noise</sub></td>
+      <td><a href="https://www.seeedstudio.com/ReSpeaker-XVF3800-USB-Mic-Array-p-6488.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td rowspan="2" align="center"><strong>Contrôleur</strong></td>
+      <td rowspan="2" align="center">Contrôleur embarqué</td>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/1/1/110110147.jpg" alt="reComputer J3011-Orin Nano 8GB" width="120"></td>
+      <td><strong>reComputer J3011-Orin Nano 8GB</strong></td>
+      <td><a href="https://www.seeedstudio.com/reComputer-J3011-p-5590.html">Seeed Studio</a></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7f7f32ef807b8c2c2215b49801c56084/i/m/image-kit-3.png" alt="NVIDIA Jetson AGX Thor Developer Kit" width="120"></td>
+      <td><strong>NVIDIA Jetson AGX Thor Developer Kit</strong></td>
+      <td><a href="https://www.seeedstudio.com/NVIDIA-Jetson-AGX-Thor-Developer-Kit-p-9965.html">Seeed Studio</a></td>
+    </tr>
+  </tbody>
+</table>
 ---
 
 ### 🎓 Écosystème robotique full-stack
