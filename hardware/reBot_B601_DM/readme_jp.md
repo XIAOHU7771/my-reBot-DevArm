@@ -67,6 +67,15 @@
 | モーター6＆7 ケーブル拘束 B | <img src="./3D_Printed_Parts/images/01_Joint6_7_Cable Restraint_B.png" width="80"> | 01_Joint6_7_Cable Restraint_B.step | Bambu ABS Black | 2 | 0.4mmノズル、0.2mmレイヤー高さ、30%インフィル |
 | - | 参考価格 | 平均 **50$** | | | 材料費と印刷時間により価格変動 |
 
+
+配線ハーネス1を長期間引き回して使用すると、モーター側コネクタが摩耗し、接触不良が発生する可能性があります。
+下記の部品を3Dプリンタで造形することで、この不具合リスクを抑えられます。
+
+| 部品詳細 | 画像 | ファイル名 | 材質 | 個数 | 備考 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| 1号モーター両面用配線ハーネスクリップ | <img src="./3D_Printed_Parts/images/DM_Motor1_wiring_harness_clip.jpg" width="80"> | `DM_Motor1_wiring_harness_clip.stp` | Bambu Lab 黒ABS樹脂 | 2個 | ノズル径0.4mm、積層ピッチ0.2mm、充填率30% |
+
+
 ## 📷 対応カメラマウント
 
 | 部品説明 | 画像 | ファイル名 | 材料 | 数量 | 注記 |

@@ -51,6 +51,12 @@ La BOM actual es la lista de componentes del brazo robótico **reBot Arm B601 DM
 | Pinza | <img src="./3D_Printed_Parts/images/02-CLIP_1.png" width="80"> | `01_Finger.step` | Bambu ABS Black | 2 | boquilla 0.4, altura de capa 0.2, relleno 45% |
 |  | `Reference price` | Promedio **50 $** |  |  | El precio puede variar ligeramente según el precio del material de impresión y el tiempo de impresión de la fábrica |
 
+Si se arrastra el arnés de cableado N.º1 durante su uso prolongado, el conector del motor se desgastará y provocará fallos de contacto. Imprima las piezas que se indican a continuación para reducir este riesgo.
+
+| Descripción de pieza | Imagen | Nombre de archivo | Material | Cantidad | Observaciones |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| Clip de arnés de cableado para ambos lados del motor 1 | <img src="./3D_Printed_Parts/images/DM_Motor1_wiring_harness_clip.jpg" width="80"> | `DM_Motor1_wiring_harness_clip.stp` | ABS negro Bambu Lab | 2 | Boquilla de 0,4 mm, altura de capa 0,2 mm, relleno al 30% |
+
 ### 🧩 Recomendaciones de impresión
 
 - Altura de capa: 0.2 mm

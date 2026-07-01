@@ -69,6 +69,14 @@ L’autre version, reBot Arm B601 RS, utilise des moteurs RobStride ; [voir la n
 | Collier de câble B pour moteurs 6 & 7 | <img src="./3D_Printed_Parts/images/01_Joint6_7_Cable Restraint_B.png" width="80"> | 01_Joint6_7_Cable Restraint_B.step | Bambu ABS Noir | 2 | Buse 0.4, hauteur de couche 0.2, remplissage 30% |
 | - | Prix de référence | Moyenne **50$** | | | Prix variable selon coût du matériau et temps d’impression |
 
+Lors d’une utilisation prolongée, le tirage répété du faisceau de câbles 1 provoque l’usure du connecteur du moteur et entraîne des défauts de contact. Imprimez les pièces listées ci-dessous pour limiter ce risque.
+
+| Désignation de la pièce | Image | Nom du fichier | Matériau | Quantité | Remarques |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| Attache de faisceau pour les deux faces du moteur 1 | <img src="./3D_Printed_Parts/images/DM_Motor1_wiring_harness_clip.jpg" width="80"> | `DM_Motor1_wiring_harness_clip.stp` | ABS noir Bambu Lab | 2 | Buse 0,4 mm, hauteur de couche 0,2 mm, remplissage 30 % |
+
+
+
 ## 📷 Support de caméra compatible
 
 | Description de la pièce | Image | Nom du fichier | Matériau | Qté | Notes |

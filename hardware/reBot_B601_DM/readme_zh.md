@@ -61,6 +61,10 @@
 | 电机6和7线束约束加固  | <img src="./3D_Printed_Parts/images/01_Joint6_7_Cable Restraint_B.png" width="80"> | `01_Joint6_7_Cable Restraint_B.step` |  拓竹 ABS 黑色  |  2 |  0.4喷嘴 0.2层高 30%填充 |
 |   | `参考价格` | 平均**350RMB**  | |  | 因打印材料价格、和工厂打印时长不同，价格略有浮动|  |  
 
+长期使用过程中拖拽线束1会磨损电机接口导致接触不良，你可以打印如下文件降低这个风险。
+|  零件描述 | 图片 | 文件名 | 材料 | 数量 | 备注 |
+|----------|------|--------|------|----------|------|
+| 电机1两个面的线束卡扣  | <img src="./3D_Printed_Parts/images/DM_Motor1_wiring_harness_clip.jpg" width="80"> | `DM_Motor1_wiring_harness_clip.stp` |  拓竹 ABS 黑色  |  2 |  0.4喷嘴 0.2层高 30%填充 |
 
 
 ##  📷兼容的相机支架

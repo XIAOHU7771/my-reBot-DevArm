@@ -71,7 +71,11 @@ This BOM is for the reBot Arm B601 DM robotic arm, which uses Damiao 43 series m
 | Motor 6 & 7 Cable Restraint B | <img src="./3D_Printed_Parts/images/01_Joint6_7_Cable Restraint_B.png" width="80"> | 01_Joint6_7_Cable Restraint_B.step | Bambu ABS Black | 2 | 0.4 nozzle, 0.2 layer height, 30% infill |
 | - | Reference Price | Average **50$** | | | Price varies by material cost and printing time |
 
+Long-term dragging of Wiring Harness 1 may abrade the motor connector and result in poor electrical contact. Printing the parts listed below can mitigate this risk.
 
+| Part Description | Image | File Name | Material | Qty | Remarks |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| Wiring Harness Clips for Two Sides of Motor 1 | <img src="./3D_Printed_Parts/images/DM_Motor1_wiring_harness_clip.jpg" width="80"> | `DM_Motor1_wiring_harness_clip.stp` | Bambu Lab Black ABS | 2 | 0.4 mm nozzle, 0.2 mm layer height, 30% infill |
 
 ### 🧩 Printing Recommendations
 - Layer height: 0.2 mm
