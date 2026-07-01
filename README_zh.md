@@ -127,7 +127,7 @@ reBot机械臂RS版本在[矽递科技电商平台](https://detail.tmall.com/ite
 | **LeRobot 适配** | ⏳ 计划中 | 适配 Hugging Face LeRobot 训练框架 | [reBot Arm B601-RS入门Lerobot](https://wiki.seeedstudio.com/cn/rebot_arm_b601_rs_lerobot/)|
 | **Pinocchio 适配** | ✅ 完成 | 适配 Pinocchio框架、实现机械臂正逆运动学及动力学重力补偿功能 |[reBot Arm B601-DM 的 Pinocchio 与 MeshCat 入门指南](https://wiki.seeedstudio.com/cn/rebot_arm_b601_rs_pinocchio_meshcat/) 以及 [Github 控制代码](https://github.com/vectorBH6/reBotArm_control_py)|
 | **深度相机集成** | ✅ 完成 | 基于 YOLO 与深度相机的视觉夹取演示 | [reBot Arm B601-RS 视觉夹取 Demo](https://wiki.seeedstudio.com/cn/rebot_arm_b601_rs_grasping_demo/) |
-| **Isaac Sim 仿真** | ⏳ 计划中 | 导入USD模型并实现仿真遥操作 | [预计 2026.06]|
+| **Isaac Sim 仿真** | ⏳ 计划中 | 导入USD模型并实现仿真遥操作 | [源代码](https://github.com/Seeed-Projects/reBot-Isaacsim)|
 | **逐步更新最新算法** | ⏳ 计划中 | 逐步更新主流算法 | 持续进行 |
 | **推出系列完全免费课程** | ⏳ 计划中 | 逐步更新主流算法 | 持续进行 |
 

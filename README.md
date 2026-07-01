@@ -131,9 +131,9 @@ We are committed to continuously maintaining and adapting to mainstream robot de
 | **Assembly Video** | 🚧 In Progress | Ultra-detailed assembly steps and video | [Expected 2026.06] |
 | **ROS2 (Humble)** | ✅ Completed | ROS2 integrated reBot Arm controller with support for kinematics, trajectory planning, gravity compensation and MoveIt2 | [reBot Arm B601-DM ROS2 Integration Guide](https://wiki.seeedstudio.com/rebot_arm_b601_rs_ros2_integration/) |
 | **LeRobot Integration** |✅ Completed| Adaptation to the Hugging Face LeRobot training framework | [Getting Started with LeRobot-based reBot Arm](https://wiki.seeedstudio.com/rebot_arm_b601_rs_lerobot/) |
-| **Pinocchio Integration** | ✅ Completed | Adaptation to the Pinocchio framework, enabling forward/inverse kinematics and gravity compensation for the robotic arm | [Getting Started with Pinocchio for reBot Arm B601-DM](https://wiki.seeedstudio.com/rebot_arm_b601_rs_pinocchio_meshcat/) and [Github repo](https://wiki.seeedstudio.com/rebot_arm_b601_rs_grasping_demo/) |
+| **Pinocchio Integration** | ✅ Completed | Adaptation to the Pinocchio framework, enabling forward/inverse kinematics and gravity compensation for the robotic arm | [Getting Started with Pinocchio for reBot Arm B601-DM](https://wiki.seeedstudio.com/rebot_arm_b601_rs_pinocchio_meshcat/) and [Github repo](https://github.com/vectorBH6/reBotArm_control_py) |
 | **Depth Camera Integration** | ✅ Completed  | Visual Grasping Demonstration Based on YOLO and Depth Camera | [Getting Started with Visual Grasping Demo](https://wiki.seeedstudio.com/rebot_arm_b601_dm_grasping_demo/) |
-| **Isaac Sim Simulation** | ⏳ Planned | Import USD models and enable simulated teleoperation | Ongoing |
+| **Isaac Sim Simulation** | ⏳ Planned | Import USD models and enable simulated teleoperation | [Github Repo](https://github.com/Seeed-Projects/reBot-Isaacsim) |
 | **Gradual Updates of the Latest Algorithms** | ⏳ Planned | Mainstream algorithms will be updated progressively | On going |
 | **Launch of a Series of Completely Free Courses** | ⏳ Planned | Mainstream algorithms will be updated progressively | Ongoing |
 
