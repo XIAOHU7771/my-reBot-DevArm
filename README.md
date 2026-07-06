@@ -14,7 +14,9 @@
 - ✅ 平滑插值轨迹，实现末端平滑运动
 - ✅ 3D 可视化仿真界面
 
+
 ## 📁 项目结构
+```text
 reBot-DevArm/
 ├── simulation/
 │ ├── rebot_sim.py # 主控制脚本
@@ -49,16 +51,17 @@ text
 git clone https://github.com/your-username/reBot-DevArm.git
 cd reBot-DevArm
 2. 创建并激活虚拟环境
-Windows:
 
+Windows:
 bash
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-Linux/macOS:
 
+Linux/macOS:
 bash
 python3 -m venv .venv
 source .venv/bin/activate
+
 3. 安装依赖
 bash
 pip install pybullet numpy matplotlib
@@ -105,7 +108,7 @@ text
 ⚠️ 建议目标点在工作空间内，推荐范围：x: 0.05~0.25, y: -0.15~0.15, z: 0.05~0.25。
 
 🎬 演示视频
-点击观看演示视频（请将演示视频放在项目根目录）
+点击观看演示视频
 
 📊 代码架构
 text
@@ -145,25 +148,6 @@ text
 
 输出：满足误差阈值的 6 个关节角度
 
-🛠 故障排查
-1. 安装 PyBullet 时提示 "Microsoft Visual C++ 14.0 or greater is required"
-下载并安装 Microsoft C++ Build Tools
-
-安装时务必勾选 "使用 C++ 的桌面开发" 工作负载
-
-安装完成后重启电脑
-
-2. 运行 rebot_sim.py 报错 "Calculate Inverse Kinematics Request failed"
-检查 end_effector_index 是否正确（重新运行 find_ee.py 确认）
-
-目标点可能超出工作空间，尝试更保守的值，如 [0.15, 0.0, 0.15]
-
-增大 maxNumIterations 参数（如 1000）
-
-3. 加载 URDF 时提示 "File not found"
-确认 urdf_path 使用的是绝对路径，且文件名正确
-
-检查文件夹名是 reBot-DevArm_fixed_description 还是 reBot-DevArm_fixend_description
 
 📝 许可证
 本项目基于 reBot-DevArm 开源项目，遵循 CERN-OHL-W-2.0 许可证。
