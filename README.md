@@ -28,7 +28,7 @@ reBot-DevArm/
 │   └── urdf/
 │       └── reBot-DevArm_fixed_description/
 │           ├── urdf/
-│           │   └── reBot-DevArm_fixed.urdf   # 机械臂 URDF 模型
+│           │   └── reBot-DevArm_fixend.urdf   # 机械臂 URDF 模型
 │           └── meshes/
 │               ├── base_link.STL
 │               ├── link1.STL ~ link6.STL
