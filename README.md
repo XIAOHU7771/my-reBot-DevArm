@@ -109,6 +109,8 @@ text
 
 🎬 演示视频
 点击观看演示视频
+<video src="https://github.com/XIAOHU7771/my-reBot-DevArm/releases/download/v1.0/demo.mp4" controls width="600"></video>
+
 
 📊 代码架构
 text
