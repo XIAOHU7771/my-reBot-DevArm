@@ -21,7 +21,6 @@
 
 ## 📁 项目结构
 
-```text
 reBot-DevArm/
 ├── simulation/
 │   ├── rebot_sim.py                        # 主控制脚本
