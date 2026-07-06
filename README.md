@@ -210,11 +210,7 @@ python simulation/rebot_sim.py
 - 检查 `end_effector_index` 是否正确（重新运行 `find_ee.py` 确认）
 - 目标点可能超出工作空间，尝试更保守的值，如 `[0.15, 0.0, 0.15]`
 - 增大 `maxNumIterations` 参数（如 1000）
-
-### 3. 加载 URDF 时提示文件未找到
-
-- 确认 `urdf_path` 使用**绝对路径**，且文件名正确
-- 检查文件夹名是 `reBot-DevArm_fixed_description` 还是 `reBot-DevArm_fixend_description`
+- 
 
 ---
 
