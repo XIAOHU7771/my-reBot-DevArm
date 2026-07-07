@@ -26,7 +26,7 @@ reBot-DevArm/
 │   ├── rebot_sim.py                        # 主控制脚本
 │   ├── find_ee.py                          # 辅助脚本：查找末端链接索引
 │   └── urdf/
-│       └── reBot-DevArm_fixed_description/
+│       └── reBot-DevArm_fixend_description/
 │           ├── urdf/
 │           │   └── reBot-DevArm_fixend.urdf   # 机械臂 URDF 模型
 │           └── meshes/
