@@ -213,12 +213,6 @@ python simulation/rebot_sim.py
 
 ---
 
-## 📝 许可证
-
-本项目基于 reBot-DevArm 开源项目，遵循 [CERN-OHL-W-2.0](https://ohwr.org/cern_ohl_w_v2) 许可证。
-
----
-
 ## 🤝 致谢
 
 - [reBot-DevArm](https://github.com/Seeed-Projects/reBot-DevArm) - 开源硬件项目
