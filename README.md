@@ -33,9 +33,8 @@ reBot-DevArm/
 │               ├── base_link.STL
 │               ├── link1.STL ~ link6.STL
 │               └── end_link.STL               # 3D 网格文件
-├── .venv/                                   # Python 虚拟环境
 ├── README.md                                # 项目说明文档
-└── LICENSE                                  # 开源协议
+└── requirements.txt                         # 依赖版本
 ```
 
 ---
