@@ -153,8 +153,6 @@ python 3.slip_compensation_test.py --no-compensate
 - 力控开：接触后轻柔停在安全力 → 重物与易碎品均能抬起  
 - （进阶）滑移对冲：外力扰动下自动加紧防掉落  
 
-演示视频可放在 [Releases](https://github.com/XIAOHU7771/my-reBot-DevArm/releases)。
-
 ---
 
 ## 六、核心算法简述
@@ -184,9 +182,9 @@ python 3.slip_compensation_test.py --no-compensate
 | 产出要求 | 状态 |
 |----------|------|
 | 任务 B：GitHub 源码 + README | ✅ `task_B/` |
-| 任务 B：位置 IK 运动录屏 | 见 Releases / 基础点位运动视频 |
+| 任务 B：位置 IK 运动录屏 | ✅ [基础点位运动视频 (v1.0 / Demo.mp4)](https://github.com/XIAOHU7771/my-reBot-DevArm/releases/tag/v1.0) |
 | 任务 B2：力控脚本与传感器代码入库 | ✅ `task_B2/` + `utils/` |
-| 任务 B2：力控开/关对比 Demo 录屏 | 见 Releases / 自适应力控抓取仿真演示视频 |
+| 任务 B2：力控开/关对比 Demo 录屏 | ✅ [自适应力控抓取仿真演示视频 (v2.0)](https://github.com/XIAOHU7771/my-reBot-DevArm/releases/tag/v2.0) |
 | 力时序 CSV / 曲线 | ✅ 运行后写入 `task_B2/force_data/` |
 
 ---
@@ -208,6 +206,6 @@ python 3.slip_compensation_test.py --no-compensate
 
 本项目基于 reBot-DevArm 开源机械臂，遵循 **CERN-OHL-W-2.0**。
 
-- reBot-DevArm — 开源六轴机械臂硬件
+- [reBot-DevArm](https://github.com/Seeed-Projects/reBot-DevArm/tree/main) — 开源六轴机械臂硬件
 - PyBullet — 多刚体物理仿真引擎
 - [reBotArm_control_py](https://github.com/vectorBH6/reBotArm_control_py) — 运动学控制与实机控制参考
