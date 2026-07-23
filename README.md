@@ -34,7 +34,7 @@
 
 ### 任务 B2 — 自适应力控抓取（`task_B2/`）
 
-对应任务书三项核心进阶要求：
+对应任务三项核心进阶要求：
 
 1. **虚拟力传感器部署**（`1.Force_Sensor_Simulation.py`）  
    - `getContactPoints` 正压力 + 关节力/力矩传感器  
@@ -181,11 +181,8 @@ python 3.slip_compensation_test.py --no-compensate
 
 | 产出要求 | 状态 |
 |----------|------|
-| 任务 B：GitHub 源码 + README | ✅ `task_B/` |
 | 任务 B：位置 IK 运动录屏 | ✅ [基础点位运动视频 (v1.0 / Demo.mp4)](https://github.com/XIAOHU7771/my-reBot-DevArm/releases/tag/v1.0) |
-| 任务 B2：力控脚本与传感器代码入库 | ✅ `task_B2/` + `utils/` |
 | 任务 B2：力控开/关对比 Demo 录屏 | ✅ [自适应力控抓取仿真演示视频 (v2.0)](https://github.com/XIAOHU7771/my-reBot-DevArm/releases/tag/v2.0) |
-| 力时序 CSV / 曲线 | ✅ 运行后写入 `task_B2/force_data/` |
 
 ---
 
