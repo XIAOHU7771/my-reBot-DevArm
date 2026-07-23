@@ -1,10 +1,19 @@
+import os
+
 import pybullet as p
 
 # 连接到PyBullet模拟器（DIRECT模式，无GUI）
 p.connect(p.DIRECT)
 
-# 加载URDF模型,使用原始字符串（r"..."）避免反斜杠转义问题
-urdf_path = r"D:\Code\reBot-DevArm\urdf\reBot-DevArm_fixend_description\urdf\reBot-DevArm_fixend.urdf"
+# 相对仓库根目录加载 URDF（避免写死本机绝对路径）
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+urdf_path = os.path.join(
+    _ROOT,
+    "urdf",
+    "reBot-DevArm_fixend_description",
+    "urdf",
+    "reBot-DevArm_fixend.urdf",
+)
 print("正在加载:", urdf_path)
 
 # 加载URDF模型，设置为固定基座, 并返回机器人ID
