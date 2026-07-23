@@ -23,11 +23,7 @@
 运行（在 simulation2 目录）:
   python 2.adaptive_force_control_grasp.py
   python 2.adaptive_force_control_grasp.py --no-force-control
-  python 2.adaptive_force_control_grasp.py --no-force-control --only sponge
-  python 2.adaptive_force_control_grasp.py --force-control --direct --no-show
 
-对照：同一脚本用 --no-force-control / --force-control 各跑一轮即可。
-说明见 README.md
 """
 
 from __future__ import annotations
