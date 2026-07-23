@@ -1,0 +1,31 @@
+# 忽略 STL 模型文件（下方用例外保留仓库内 URDF 网格）
+*.STL
+*.stl
+!urdf/**/*.STL
+!urdf/**/*.stl
+!simulation/urdf/**/*.STL
+!simulation/urdf/**/*.stl
+
+# 忽略 Python 虚拟环境
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# 忽略编译生成的文件
+build/
+devel/
+install/
+log/
+
+# 忽略 IDE 配置
+.vscode/
+.idea/
+
+# 忽略临时文件与实验数据
+*.tmp
+*.log
+force_data/
+simulation2/force_data/*.csv
+simulation2/force_data/*.png
+!simulation2/force_data/.gitkeep

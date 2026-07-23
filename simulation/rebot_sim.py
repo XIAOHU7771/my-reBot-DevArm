@@ -1,24 +1,36 @@
 
 # 虚拟仿真控制
-# 输入目标坐标 (x,y,z)，末端平滑移动到该点 
+# 输入目标坐标 (x,y,z)，末端平滑移动到该点
 
-import pybullet as p
+import os
 import time
-import numpy as np
 
-# 启动 PyBullet GUI 窗口，初始化重力
+import numpy as np
+import pybullet as p
+
+# 连接到 PyBullet 模拟器（GUI模式）,并设置重力
 p.connect(p.GUI)
 p.setGravity(0, 0, -9.8)
 
-# 加载模型 
-urdf_path = r"D:\Code\reBot-DevArm\simulation\urdf\reBot-DevArm_fixend_description\urdf\reBot-DevArm_fixend.urdf"
+# 相对仓库根目录加载 URDF（避免写死本机绝对路径）
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+urdf_path = os.path.join(
+    _ROOT,
+    "urdf",
+    "reBot-DevArm_fixend_description",
+    "urdf",
+    "reBot-DevArm_fixend.urdf",
+)
 print("加载模型:", urdf_path)
+# 加载URDF模型，设置为固定基座, 并返回机器人ID
 robotId = p.loadURDF(urdf_path, useFixedBase=True)
 print("✅ 模型加载成功")
 
-# 获取运动关节 
+# 获取所有非固定关节的索引
 joint_indices = []
+# 遍历所有关节，检查关节类型是否为非固定关节
 for i in range(p.getNumJoints(robotId)):
+# 获取关节信息并检查关节类型
     if p.getJointInfo(robotId, i)[2] != p.JOINT_FIXED:
         joint_indices.append(i)
 print(f"运动关节索引: {joint_indices}")
@@ -72,3 +84,4 @@ for t in np.linspace(0, 1, steps):
 print("✅ 运动完成！窗口保持打开...")
 while True:
     time.sleep(0.1)
+

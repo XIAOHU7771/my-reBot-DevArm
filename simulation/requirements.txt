@@ -1,0 +1,8 @@
+# 基础依赖
+pyyaml
+numpy>=1.21
+matplotlib>=3.5
+pybullet>=3.2.5
+
+# simulation2（力控 / 力传感）额外依赖已包含在上方
+# 也可单独：pip install -r simulation2/requirements.txt
