@@ -1,9 +1,9 @@
 """
-3.slip_compensation_test.py
+4.slip_compensation_test.py
 ============================================================
 双向滑移对冲测试（Slip Compensation / Anti-Slip）
 
-功能：
+进阶场景：
   1. 力控抓取并抬起物体
   2. 对物体施加持续向下的外力（模拟负载突变 / 额外重力）
   3. 通过指尖接触力 + 相对滑移速度，感知“摩擦力/接触异常”
@@ -116,7 +116,6 @@ def read_contact_bundle(robot, body):
 
 
 def finger_and_obj_state(robot, body):
-    """汇总指心/物体位姿与相对滑移速度（用于滑移检测）。"""
     mid, left, right = _AFC.get_finger_mid(robot)
     obj_p, _ = p.getBasePositionAndOrientation(body)
     obj_p = np.array(obj_p, dtype=float)
@@ -135,22 +134,17 @@ def finger_and_obj_state(robot, body):
 
 
 class SlipRecorder:
-    """滑移对冲实验时序记录与曲线导出。"""
-
     def __init__(self, sim_dt=SIM_DT):
-        """初始化滑移实验记录缓冲。"""
         self.sim_dt = sim_dt
         self.t = 0.0
         self.rows = []
 
     def log(self, **kw):
-        """追加一帧力、扰动、滑移量与握宽。"""
         row = {"time": self.t, **kw}
         self.rows.append(row)
         self.t += self.sim_dt
 
     def save(self, prefix="slip_comp"):
-        """导出 CSV 与三通道曲线图。"""
         os.makedirs("force_data", exist_ok=True)
         stamp = time.strftime("%Y%m%d_%H%M%S")
         csv_path = os.path.join("force_data", f"{prefix}_{stamp}.csv")
@@ -427,7 +421,6 @@ def slip_compensation_hold(
 
 
 def parse_args():
-    """解析 --compensate / --disturb / --direct 等参数。"""
     ap = argparse.ArgumentParser(description="双向滑移对冲测试")
     ap.add_argument("--direct", action="store_true")
     ap.add_argument("--no-show", action="store_true")
@@ -448,7 +441,6 @@ def parse_args():
 
 
 def main():
-    """任务3主流程：力控抓起后施加向下外力，对比滑移对冲开/关。"""
     global _AFC
     args = parse_args()
     compensate = (

@@ -1,12 +1,7 @@
 """
 utils/gripper.py
-================
-夹爪控制与力传感工具。
 
-功能：
-  - width ↔ 左右棱柱关节映射（默认指心保持，避免单指先触）
-  - 开合 / 力均衡微调
-  - 接触点法向力（虚拟触觉）与关节反作用力读数
+夹爪控制和力传感工具。
 
 物理一致性说明（不改 URDF）：
   URDF 中 joint_left 行程 0~0.05、joint_right 行程 0~0.0715。
@@ -45,7 +40,7 @@ LEFT_RATIO = LEFT_UPPER / RIGHT_UPPER
 
 
 def init_gripper(robot_data):
-    """从 load_robot() 同步索引，并使能关节力/力矩传感器。"""
+    """从 load_robot() 同步索引，并使能关节力/力矩传感器。""" 
     global LEFT_JOINT, RIGHT_JOINT, LEFT_LINK, RIGHT_LINK
     LEFT_JOINT = robot_data["left_joint"]
     RIGHT_JOINT = robot_data["right_joint"]

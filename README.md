@@ -1,637 +1,107 @@
-# reBot-DevArm Simulation & Adaptive Force Control
+# my-reBot-DevArm
+基于 PyBullet 的 reBot-DevArm 六轴机械臂虚拟数字孪生仿真项目。
 
-<p align="center">
-  <b>PyBullet-based Robot Simulation and Adaptive Grasping Research</b>
-</p>
-
-
-## Overview
-
-本项目基于开源机械臂平台 **reBot-DevArm** 进行二次开发，使用 **PyBullet** 搭建机器人仿真环境，实现机械臂运动控制、逆运动学求解、物体抓取以及自适应力控抓取实验。
-
-项目主要面向：
-
-- Robot Simulation（机器人仿真）
-- Motion Planning（运动规划）
-- Inverse Kinematics（逆运动学）
-- Robotic Grasping（机器人抓取）
-- Adaptive Force Control（自适应力控）
+## 📖 项目概述
+仓库包含两套**相互独立**的仿真工程，分别使用不同的urdf模型：
+1. **simulation**：基础笛卡尔空间点位运动仿真，用于机械臂逆运动学与点位控制学习。
+2. **simulation2**：平行夹爪高级抓取仿真，集成虚拟触觉传感、对称开合、自适应力控、滑移补偿算法。
 
 
-本仓库包含两个独立实验任务：
+## ✨ 功能列表
+### simulation｜基础点位运动仿真
+- 加载 reBot-DevArm 机械臂 URDF 模型
+- 终端交互式输入末端 TCP 笛卡尔坐标
+- PyBullet 内置数值逆运动学 IK 求解
+- 线性插值平滑轨迹生成
+- GUI 3D可视化仿真
 
-| 模块 | 任务 | 内容 |
-|----|----|----|
-| simulation | 基础机械臂仿真任务 | URDF加载、IK控制、轨迹运动、Cube抓取 |
-| simulation2 | 自适应力控抓取任务 | 力反馈、夹爪状态采集、抓取曲线分析 |
+### simulation2｜夹爪力控抓取仿真
+- 平行夹爪「指心不变」对称开合控制
+- 双路力采集：接触点正压力、关节反作用力
+- 自适应双指力均衡夹持控制器
+- 刚性铁块 / 柔性海绵抓取对照实验
+- 物体滑移检测与自动加紧补偿
+- 力时序数据导出 CSV、实时绘制力曲线
 
-
----
-
-# Project Structure
-
-
-```
-my-reBot-DevArm
-│
-├── simulation
-│   │
-│   ├── urdf
-│   │   └── Robot model files
-│   │
-│   ├── utils
-│   │   ├── robot.py
-│   │   ├── scene.py
-│   │   ├── ik.py
-│   │   └── gripper.py
-│   │
-│   ├── test_workspace.py
-│   ├── workspace_gui.py
-│   └── pick_cube.py
-│
-│
-├── simulation2
-│   │
-│   ├── adaptive_force_control
-│   │
-│   ├── force_sensor
-│   │
-│   ├── grasp_controller
-│   │
-│   ├── curve_visualization
-│   │
-│   └── force_grasp.py
-│
-│
+## 📂 仓库目录结构
+my-reBot-DevArm/
+├── simulation/ # 独立工程 1：基础 TCP 点位运动仿真
+│ ├── find_ee.py # 查询关节、Link 索引工具
+│ └── rebot_sim.py # 笛卡尔坐标控制主程序
+├── simulation2/ # 独立工程 2：夹爪力传感 & 力控抓取仿真
+│ ├── 1.Force_Sensor_Simulation.py # 虚拟触觉仿真、力数据记录
+│ ├── 3.adaptive_force_control_grasp.py # 自适应力控抓取实验
+│ ├── 4.slip_compensation_test.py # 滑移对冲补偿实验
+│ ├── utils/ # 夹爪控制、力传感工具包
+│ └── force_data/ # 导出 CSV、力曲线图片
+├── urdf/ # 机械臂 URDF 模型文件
 ├── requirements.txt
-│
 └── README.md
+plaintext
 
-```
+## 🛠 环境依赖
+- Python ≥ 3.10
+- 支持 Windows / Linux / macOS
+- 基础依赖：`pybullet`, `numpy`, `matplotlib`
 
-
----
-
-# Environment
-
-
-## Hardware
-
-测试环境：
-
-- CPU: Intel i9
-- GPU: NVIDIA RTX 5060 Laptop GPU
-
-
-## Software
-
-- Windows 10/11
-- Python 3.11
-- PyBullet
-- NumPy
-- Matplotlib
-
-
-安装依赖：
-
+## 📦 安装步骤
+### 1. 克隆代码仓库
 ```bash
-pip install -r requirements.txt
-```
-
-
-或者：
-
-
-```bash
+git clone https://github.com/XIAOHU7771/my-reBot-DevArm.git
+cd my-reBot-DevArm
+2. 创建并激活虚拟环境
+Windows PowerShell
+powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+Linux / macOS
+bash
+python3 -m venv .venv
+source .venv/bin/activate
+3. 安装依赖包
+bash
+# 全局基础依赖
 pip install pybullet numpy matplotlib
-```
 
-
----
-
-# Simulation
-
-# Task 1: Basic Robot Simulation
-
-
-## Introduction
-
-
-`simulation` 是机械臂基础仿真任务。
-
-主要实现：
-
-- 机器人模型加载
-- 关节控制
-- 末端执行器运动
-- 逆运动学求解
-- Cube自动抓取
-
-
-整体流程：
-
-```
-Robot Model
-
-      ↓
-
-PyBullet Simulation
-
-      ↓
-
-IK Solver
-
-      ↓
-
-End Effector Motion
-
-      ↓
-
-Grasp Object
-
-```
-
-
----
-
-# 1. Robot Model Loading
-
-
-通过 URDF 文件加载机械臂模型：
-
-主要包含：
-
-- 六自由度机械臂
-- 固定末端连接
-- 两指平行夹爪
-
-
-机器人结构：
-
-
-```
-base_link
-
-    |
-
- link1
-
-    |
-
- link2
-
-    |
-
- ...
-
-    |
-
- link6
-
-    |
-
-gripper_end
-
-    |
-
-left/right finger
-
-```
-
-
----
-
-# 2. Inverse Kinematics
-
-
-通过 PyBullet 内置 IK 求解机械臂关节角度。
-
-
-输入：
-
-```
-Target TCP Position
-
-(x,y,z)
-```
-
-
-输出：
-
-```
-Joint1 ~ Joint6 Angle
-
-```
-
-
-控制机械臂末端移动到目标位置。
-
-
----
-
-# 3. Gripper Control
-
-
-夹爪采用两个 prismatic joint 控制：
-
-```
-joint_left
-
-joint_right
-
-```
-
-
-支持：
-
-- Open Gripper
-- Close Gripper
-
-
-初始状态：
-
-```
-Fully Open
-
-width = 0.0715 m
-
-```
-
-
----
-
-# 4. Cube Grasping Task
-
-
-抓取流程：
-
-
-```
-Open Gripper
-
-        ↓
-
-Move to Pre-Grasp Pose
-
-        ↓
-
-Move Down
-
-        ↓
-
-Close Gripper
-
-        ↓
-
-Lift Cube
-
-```
-
-
-目标：
-
-- 验证机械臂运动能力
-- 验证IK控制效果
-- 完成自主抓取
-
-
----
-
-# Run Simulation
-
-
-进入目录：
-
-
-```bash
-cd simulation
-```
-
-
-运行：
-
-
-```bash
-python pick_cube.py
-```
-
-
-运行后：
-
-- PyBullet GUI启动
-- 机械臂自动运动
-- 完成Cube抓取任务
-
-
----
-
-# Simulation2
-
-# Task 2: Adaptive Force Control Grasping
-
-
-## Introduction
-
-
-`simulation2` 是在基础仿真任务上的进一步扩展。
-
-目标：
-
-实现机械臂针对不同物体的：
-
-> 自适应力控抓取
-
-
-主要研究：
-
-- 接触检测
-- 抓取力估计
-- 夹爪运动控制
-- 力反馈调节
-
-
----
-
-# System Architecture
-
-
-```
-Object
-
-  |
-
-Contact
-
-  |
-
-Force Sensor
-
-  |
-
-Controller
-
-  |
-
-Gripper Motion
-
-```
-
-
----
-
-# 1. Gripper Width Recording
-
-
-实时记录夹爪状态：
-
-采集数据：
-
-```
-Time
-
-Gripper Width
-
-Contact State
-
-Force Value
-
-```
-
-
-生成：
-
-```
-Gripper Width Curve
-
-```
-
-
-曲线变化：
-
-```
-
-Width
-
-0.0715m
-
- |
-
- |\
- | \
- |  \
- |   \
- |    \
-
-0m ---------------- Time
-
-
-```
-
-
-表示：
-
-夹爪从最大开口逐渐闭合。
-
-
----
-
-# 2. Force Feedback
-
-
-利用 PyBullet 物理接口获取接触信息：
-
-
-```python
-getJointState()
-
-```
-
-
-获取：
-
-- Joint reaction force
-- Contact information
-
-
-用于判断：
-
-```
-Object Contact
-
-        ↓
-
-Force Increase
-
-        ↓
-
-Stop Closing
-
-```
-
-
----
-
-# 3. Adaptive Grasp Controller
-
-
-控制策略：
-
-
-```
-Gripper Close
-
-        ↓
-
-Monitor Force
-
-        ↓
-
-Compare Threshold
-
-        ↓
-
-Adjust Position
-
-        ↓
-
-Stable Grasp
-
-```
-
-
-支持：
-
-- 不同物体尺寸
-- 不同质量
-- 不同摩擦系数
-
-
----
-
-# Experiment
-
-
-## Object Parameters
-
-
-测试不同物体：
-
-
-| Object | Mass | Friction |
-|-|-|-|
-| Cube | 0.05kg | High |
-| Object2 | Different | Different |
-
-
----
-
-# Result Visualization
-
-
-输出：
-
-## Gripper Width Curve
-
-
-展示：
-
-- 夹爪闭合过程
-- 接触时间
-- 最终夹持状态
-
-
-## Force Curve
-
-
-展示：
-
-- 接触力变化
-- 稳定夹持阶段
-
-
----
-
-# Future Work
-
-
-## 1. Vision Based Grasping
-
-
-加入视觉模块：
-
-```
-Camera
-
- ↓
-
-Object Detection
-
- ↓
-
-Pose Estimation
-
- ↓
-
-IK Planning
-
- ↓
-
-Grasp
-
-```
-
-
-计划结合：
-
-- RGB Camera
-- Depth Camera
-- YOLO
-
-
----
-
-## 2. Embodied Intelligence
-
-
-进一步探索：
-
-- Vision-Language-Action Model
-- Robot Learning
-- Large Language Model Control
-
-
-实现：
-
-```
-Human Instruction
-
-        ↓
-
-LLM
-
-        ↓
-
-Robot Action
-
-```
-
-
----
-
-# Acknowledgement
-
-
-This project is based on:
-
-**reBot-DevArm Open Source Robot Platform**
-
-
-Thanks to the open-source robotics community.
-
-
----
-
-# License
-
-
-For research and educational purposes.
+# simulation2模块额外依赖
+pip install -r simulation2/requirements.txt
+⚠️ Windows 安装 PyBullet 若出现编译报错，请安装 Microsoft C++ Build Tools，勾选「使用 C++ 的桌面开发」工作负载。
+🚀 运行指南
+simulation｜基础点位运动仿真
+查询末端 Link 索引（首次运行必须执行）
+bash
+python simulation/find_ee.py
+启动笛卡尔坐标控制程序
+bash
+python simulation/rebot_sim.py
+终端提示输入目标坐标，格式示例：
+plaintext
+0.15, 0.0, 0.15
+推荐工作区间：x:0.05~0.25, y:-0.15~0.15, z:0.05~0.25
+simulation2｜力控抓取仿真
+bash
+cd simulation2
+
+# 虚拟力传感器仿真，记录力曲线
+python 1.Force_Sensor_Simulation.py
+
+# 启用力控抓取
+python 2.adaptive_force_control_grasp.py --force-control
+
+# 无力控对照实验
+python 2.adaptive_force_control_grasp.py --no-force-control
+
+# 开启滑移自动补偿实验
+python 3.slip_compensation_test.py
+
+📀 Release 资源说明
+Release 页面附带资源：
+自适应力控抓取仿真演示视频
+基础点位运动视频
+
+📄 许可证
+本项目基于 reBot-DevArm 开源硬件项目，遵循 CERN-OHL-W-2.0 开源协议。
+
+🤝 致谢
+reBot-DevArm 开源机械臂硬件项目
+PyBullet 物理仿真引擎
