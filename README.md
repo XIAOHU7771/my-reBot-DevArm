@@ -195,7 +195,7 @@ python 3.slip_compensation_test.py --no-compensate
 - `--no-force-log` → 不写力控曲线（更快）  
 - `--seed N` → 随机摆放可复现  
 
-更细的调用链与模块说明见 [`task_VTG/README.md`](task_VTG/README.md)、[`task_VTG/运行说明.md`](task_VTG/运行说明.md)。
+（模块细节见仓库内 `task_VTG/` 源码与脚本注释；本地可另备运行说明文档。）
 
 ---
 

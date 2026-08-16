@@ -22,6 +22,13 @@ log/
 .vscode/
 .idea/
 
+# 本地教学/说明文档（不上传 GitHub）
+新手入门讲解.md
+本工程如何用AI开发（提示词说明）.md
+视触融合任务说明.md
+task_VTG/运行说明.md
+task_VTG/README.md
+
 # 忽略临时文件与实验数据
 *.tmp
 *.log
