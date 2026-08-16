@@ -693,7 +693,20 @@ class GraspRecorder:
             w.writerows(self.rows)
         print(f"[保存] {csv_path}")
 
+        import matplotlib
         import matplotlib.pyplot as plt
+
+        # VTG/脚本直接调 save 时未必走过 main() 的字体配置，此处保证中文不方框
+        plt.rcParams["font.sans-serif"] = [
+            "Microsoft YaHei", "SimHei", "Noto Sans CJK SC", "DejaVu Sans",
+        ]
+        plt.rcParams["axes.unicode_minus"] = False
+        # 清除字体缓存失败时的缺字警告刷屏（可选）
+        try:
+            matplotlib.rcParams["font.family"] = "sans-serif"
+        except Exception:
+            pass
+
         times = [r["time"] for r in self.rows]
         fig, axes = plt.subplots(3, 1, figsize=(10, 9), sharex=True)
         axes[0].plot(times, [r.get("f_meas", 0) for r in self.rows],
