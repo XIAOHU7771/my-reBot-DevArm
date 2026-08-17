@@ -10,13 +10,17 @@
 
 ---
 
+
+
 ## 一、项目概览
 
-| 模块 | 目录 | 能力 |
-|------|------|------|
-| **任务 B** | `task_B/` | 加载 URDF；输入 TCP `(x,y,z)`；IK + 关节插值平滑到达 |
-| **任务 B2** | `task_B2/` | 虚拟力传感；铁块/海绵自适应力控；抬升后滑移对冲 |
+
+| 模块         | 目录          | 能力                                         |
+| ---------- | ----------- | ------------------------------------------ |
+| **任务 B**   | `task_B/`   | 加载 URDF；输入 TCP `(x,y,z)`；IK + 关节插值平滑到达     |
+| **任务 B2**  | `task_B2/`  | 虚拟力传感；铁块/海绵自适应力控；抬升后滑移对冲                   |
 | **任务 VTG** | `task_VTG/` | 顶视 RGB-D 定位 → 调用 B2 力控 → 软/硬分区放置；（进阶）下探重跟踪 |
+
 
 **依赖关系**：VTG **不重写**力控 PID，通过 `task_VTG/grasp/adaptive_bridge.py` 调用 `task_B2/2.adaptive_force_control_grasp.py`。
 
@@ -44,7 +48,11 @@ flowchart LR
   B2 -.->|utils / 力控被复用| VTG
 ```
 
+
+
 ---
+
+
 
 ## 二、仓库结构
 
@@ -86,13 +94,17 @@ my-reBot-DevArm/
 
 ---
 
+
+
 ## 三、环境配置
 
-| 项目 | 要求 |
-|------|------|
-| Python | ≥ 3.10 |
-| OS | Windows / Linux / macOS |
-| 依赖 | `numpy`、`matplotlib`、`pybullet`（见 `requirements.txt`） |
+
+| 项目     | 要求                                                    |
+| ------ | ----------------------------------------------------- |
+| Python | ≥ 3.10                                                |
+| OS     | Windows / Linux / macOS                               |
+| 依赖     | `numpy`、`matplotlib`、`pybullet`（见 `requirements.txt`） |
+
 
 ```bash
 git clone https://github.com/XIAOHU7771/my-reBot-DevArm.git
@@ -111,7 +123,11 @@ pip install -r requirements.txt
 
 ---
 
+
+
 ## 四、功能说明
+
+
 
 ### 4.1 任务 B — 运动仿真（`task_B/`）
 
@@ -119,28 +135,32 @@ pip install -r requirements.txt
 - 终端输入目标 TCP，关节空间插值平滑运动  
 - `find_ee.py` 核对末端 Link 索引（常见为 6）
 
+
+
 ### 4.2 任务 B2 — 力控抓取（`task_B2/`）
 
-1. **虚拟力传感**（`1.Force_Sensor_Simulation.py`）  
-   `getContactPoints` 正压力 + 关节力传感器，导出 CSV / 曲线  
-
-2. **自适应力控**（`2.adaptive_force_control_grasp.py`）  
-   同场景铁块（硬/重）+ 海绵（软/轻）  
+1. **虚拟力传感**（`1.Force_Sensor_Simulation.py`）
+  `getContactPoints` 正压力 + 关节力传感器，导出 CSV / 曲线
+2. **自适应力控**（`2.adaptive_force_control_grasp.py`）
+  同场景铁块（硬/重）+ 海绵（软/轻）  
    接触 → 探刚度 → 选 `F_safe` → PID 恒力 → 抬升验证  
-   `--force-control` / `--no-force-control` 开闭对照  
+   `--force-control` / `--no-force-control` 开闭对照
+3. **滑移对冲**（`3.slip_compensation_test.py`）
+  抬升后向下外力扰动；开启对冲则自动加紧，关闭易掉落
 
-3. **滑移对冲**（`3.slip_compensation_test.py`）  
-   抬升后向下外力扰动；开启对冲则自动加紧，关闭易掉落  
+
 
 ### 4.3 任务 VTG — 视触融合（`task_VTG/`）
 
-| 环节 | 实现 |
-|------|------|
-| 视觉 | Eye-to-Hand 顶视 RGB-D；HSV 红/黄检测；相机系 → 基座系 |
-| 运动 | IK 预抓取 → 下探对齐 |
-| 力觉 | bridge 调用 B2 自适应力控（硬大力 / 软小力） |
-| 分拣 | 黄/软 → `ZONE_A`；红/硬 → `ZONE_B` |
-| 进阶 | 下探中物体被平移 → `[RETRACK]` 更新目标再抓 |
+
+| 环节  | 实现                                       |
+| --- | ---------------------------------------- |
+| 视觉  | Eye-to-Hand 顶视 RGB-D；HSV 红/黄检测；相机系 → 基座系 |
+| 运动  | IK 预抓取 → 下探对齐                            |
+| 力觉  | bridge 调用 B2 自适应力控（硬大力 / 软小力）            |
+| 分拣  | 黄/软 → `ZONE_A`；红/硬 → `ZONE_B`            |
+| 进阶  | 下探中物体被平移 → `[RETRACK]` 更新目标再抓            |
+
 
 ```text
 DETECT → SELECT → APPROACH → FORCE_GRASP → LIFT → TRANSPORT → PLACE → RETREAT → …
@@ -148,7 +168,11 @@ DETECT → SELECT → APPROACH → FORCE_GRASP → LIFT → TRANSPORT → PLACE 
 
 ---
 
+
+
 ## 五、运行说明
+
+
 
 ### 5.1 任务 B
 
@@ -178,28 +202,34 @@ python 3.slip_compensation_test.py --no-compensate
 
 ### 5.3 任务 VTG（主 Demo）
 
-| 目的 | 命令 |
-|------|------|
-| **GUI 全自动分拣（录屏 / 画面二）** | `python task_VTG/scripts/run_pipeline_m4.py --seed 7 --annotate` |
-| 无窗口烟测 | `python task_VTG/scripts/run_pipeline_m4.py --direct --no-force-log --seed 7 --annotate` |
-| **顶视标注图（画面一）** | `python task_VTG/scripts/annotate_frame.py --seed 7` |
-| 固定坐标通管道（不依赖视觉） | `python task_VTG/scripts/run_pipeline_m3.py --direct --no-force-log` |
-| 相机存图 | `python task_VTG/scripts/save_camera_frame.py --direct` |
-| 检测 + 手眼误差 | `python task_VTG/scripts/test_detect_localize.py --direct` |
-| 下探重跟踪 | `python task_VTG/scripts/run_retrack_demo.py --direct --retrack --nudge --no-force-log` |
+
+| 目的                      | 命令                                                                                       |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| **GUI 全自动分拣（录屏 / 画面二）** | `python task_VTG/scripts/run_pipeline_m4.py --seed 7 --annotate`                         |
+| 无窗口烟测                   | `python task_VTG/scripts/run_pipeline_m4.py --direct --no-force-log --seed 7 --annotate` |
+| **顶视标注图（画面一）**          | `python task_VTG/scripts/annotate_frame.py --seed 7`                                     |
+| 固定坐标通管道（不依赖视觉）          | `python task_VTG/scripts/run_pipeline_m3.py --direct --no-force-log`                     |
+| 相机存图                    | `python task_VTG/scripts/save_camera_frame.py --direct`                                  |
+| 检测 + 手眼误差               | `python task_VTG/scripts/test_detect_localize.py --direct`                               |
+| 下探重跟踪                   | `python task_VTG/scripts/run_retrack_demo.py --direct --retrack --nudge --no-force-log`  |
+
 
 常用参数：
 
-- **去掉 `--direct`** → 弹出 PyBullet 3D 窗口（可视化）  
+- **去掉** `--direct` → 弹出 PyBullet 3D 窗口（可视化）  
 - `--annotate` → 保存顶视检测标注到 `task_VTG/debug_images/`  
 - `--no-force-log` → 不写力控曲线（更快）  
-- `--seed N` → 随机摆放可复现  
+- `--seed N` → 随机摆放可复现
 
 （模块细节见仓库内 `task_VTG/` 源码与脚本注释；本地可另备运行说明文档。）
 
 ---
 
+
+
 ## 六、核心算法简述
+
+
 
 ### 6.1 逆运动学（B / B2 / VTG 共用思路）
 
@@ -217,6 +247,8 @@ python 3.slip_compensation_test.py --no-compensate
 抬升后外力 ↓ → 滑移/摩擦异常 → 对称加紧（对冲开启时）
 ```
 
+
+
 ### 6.4 视触融合（VTG）
 
 ```text
@@ -227,33 +259,44 @@ RGB-D → 颜色质心 + 深度中位数 → (X,Y,Z)_cam
 
 ---
 
+
+
 ## 七、交付对照
 
-| 产出 | 状态 |
-|------|------|
-| 任务 B：IK 点位运动 Demo | ✅ [v1.0 Demo](https://github.com/XIAOHU7771/my-reBot-DevArm/releases/tag/v1.0) |
-| 任务 B2：力控开/关对比 Demo | ✅ [v2.0 力控演示](https://github.com/XIAOHU7771/my-reBot-DevArm/releases/tag/v2.0) |
-| 任务 VTG：工程目录 + 架构/README | ✅ `task_VTG/`（Vision-Tactile-Grasping） |
-| Video Demo 3.0 画面一（标注坐标） | ✅ `annotate_frame.py` / `--annotate` → `debug_images/` |
-| Video Demo 3.0 画面二（自动分拣） | ✅ GUI：`run_pipeline_m4.py --seed 7 --annotate` |
+
+| 产出                       | 状态                                                                                        |
+| ------------------------ | ----------------------------------------------------------------------------------------- |
+| 任务 B：IK 点位运动 Demo        | ✅ [基础点位运动视频 (v1.0)](https://github.com/XIAOHU7771/my-reBot-DevArm/releases/tag/v1.0)      |
+| 任务 B2：力控开/关对比 Demo       | ✅ [自适应力控抓取仿真演示视频 (v2.0)](https://github.com/XIAOHU7771/my-reBot-DevArm/releases/tag/v2.0) |
+| 任务 VTG：工程目录 + 架构/README  | ✅ `task_VTG/`（Vision-Tactile-Grasping）                                                    |
+| Video Demo 3.0 画面一（标注坐标） | ✅ [相机挂载标注坐标视频 (v3.0)](https://github.com/XIAOHU7771/my-reBot-DevArm/releases/tag/v3.0)    |
+| Video Demo 3.0 画面二（自动分拣） | ✅ [自动分拣视频 (v3.1)](https://github.com/XIAOHU7771/my-reBot-DevArm/releases/tag/v3.1)        |
+
+
+全部演示视频汇总：[Releases](https://github.com/XIAOHU7771/my-reBot-DevArm/releases)
 
 ---
+
+
 
 ## 八、故障排查
 
-| 问题 | 处理 |
-|------|------|
-| PyBullet 安装失败 | 安装 C++ Build Tools 后重装 |
-| IK 失败 / 臂不动 | `python task_B/find_ee.py` 核对末端；目标改到推荐工作空间 |
-| 插值过快 / 像瞬移 | `task_B/rebot_sim.py` 增大 `steps` 或略增 `time.sleep` |
-| 夹爪左右力差过大 | 确认指心对称开合（`keep_center=True`） |
-| 找不到 URDF | 从**仓库根目录**运行；确认 `urdf/` 存在 |
-| VTG `import utils` 失败 | 不要在 `task_VTG/` 内乱改 cwd；按第五节从仓库根执行 |
-| 力控曲线中文变方框 | 已在 B2 `GraspRecorder.save()` 内配置中文字体；重新跑一遍生成新图 |
-| VTG 检测不到物体 | 先回 HOME 再拍；确认红/黄外观；用 `test_detect_localize.py` 看 overlay |
-| 无 3D 窗口 | 去掉命令中的 `--direct` |
+
+| 问题                    | 处理                                                       |
+| --------------------- | -------------------------------------------------------- |
+| PyBullet 安装失败         | 安装 C++ Build Tools 后重装                                   |
+| IK 失败 / 臂不动           | `python task_B/find_ee.py` 核对末端；目标改到推荐工作空间               |
+| 插值过快 / 像瞬移            | `task_B/rebot_sim.py` 增大 `steps` 或略增 `time.sleep`        |
+| 夹爪左右力差过大              | 确认指心对称开合（`keep_center=True`）                             |
+| 找不到 URDF              | 从**仓库根目录**运行；确认 `urdf/` 存在                               |
+| VTG `import utils` 失败 | 不要在 `task_VTG/` 内乱改 cwd；按第五节从仓库根执行                       |
+| 力控曲线中文变方框             | 已在 B2 `GraspRecorder.save()` 内配置中文字体；重新跑一遍生成新图           |
+| VTG 检测不到物体            | 先回 HOME 再拍；确认红/黄外观；用 `test_detect_localize.py` 看 overlay |
+
 
 ---
+
+
 
 ## 九、许可证与致谢
 
@@ -261,4 +304,5 @@ RGB-D → 颜色质心 + 深度中位数 → (X,Y,Z)_cam
 
 - [reBot-DevArm](https://github.com/Seeed-Projects/reBot-DevArm) — 开源六轴机械臂硬件  
 - [PyBullet](https://pybullet.org/) — 多刚体物理仿真  
-- [reBotArm_control_py](https://github.com/vectorBH6/reBotArm_control_py) — 运动学与实机控制参考  
+- [reBotArm_control_py](https://github.com/vectorBH6/reBotArm_control_py) — 运动学与实机控制参考
+

@@ -5,6 +5,7 @@ M5 快路径：随机摆放 → 顶视检测 → 保存标注图（不跑抓取�
 
 运行（仓库根目录）:
   python task_VTG/scripts/annotate_frame.py --direct --seed 7
+  python task_VTG/scripts/annotate_frame.py --seed 7
 """
 
 from __future__ import annotations
